@@ -41,8 +41,26 @@
       <div class="after-form text-center">
         <p>By subscribing, you are agreeing to our terms and conditions. See privacy policy for more.</p>
       </div>
-      <div class="footermenus-wrapper">
-
+      <div class="footer-menus-wrapper border-top">
+        <div class="footer-menu-left">
+          <div class="footer-block">
+            <p class="text-uppercase">about us</p>
+            <ul>
+              <li><a href="#">philosophy</a></li>
+              <li><a href="#">Directions</a></li>
+              <li><a href="#">faq</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="block">
+            <p>THE MERU sanur</p>
+            <p>Jalan Hang Tuah
+            Sanur Kaja, Denpasar Selatan,
+            Kota Denpasar, Bali 8022</p>
+          </div>
+        </div>
       </div>
       <div class="footer-bottom d-flex justify-content-between">
         <div class="footer-bottom-left flex">
