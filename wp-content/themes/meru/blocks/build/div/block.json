@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rk/div",
+  "version": "0.1.0",
+  "title": "Div",
+  "category": "widgets",
+  "description": "Simple element",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "rk",
+  "editorScript": "file:./index.js"
+}
