@@ -5,21 +5,27 @@
 
 @font-face {
   font-family: "MinionProRegular";
-  src: url("fonts/MinionProRegular.eot");
-  src: url("fonts/MinionProRegular.eot") format("embedded-opentype"), url("fonts/MinionProRegular.woff2") format("woff2"), url("fonts/MinionProRegular.woff") format("woff"), url("fonts/MinionProRegular.ttf") format("truetype"), url("fonts/MinionProRegular.svg#MinionProRegular") format("svg");
+  src: url("../fonts/MinionProRegular.eot");
+  src: url("../fonts/MinionProRegular.eot") format("embedded-opentype"), url("../fonts/MinionProRegular.woff2") format("woff2"), url("../fonts/MinionProRegular.woff") format("woff"), url("../fonts/MinionProRegular.ttf") format("truetype"), url("../fonts/MinionProRegular.svg#MinionProRegular") format("svg");
 }
 @font-face {
   font-family: "UniversLightNormalRegular";
-  src: url("fonts/UniversLightNormalRegular.eot");
-  src: url("fonts/UniversLightNormalRegular.eot") format("embedded-opentype"), url("fonts/UniversLightNormalRegular.woff2") format("woff2"), url("fonts/UniversLightNormalRegular.woff") format("woff"), url("fonts/UniversLightNormalRegular.ttf") format("truetype"), url("fonts/UniversLightNormalRegular.svg#UniversLightNormalRegular") format("svg");
+  src: url("../fonts/UniversLightNormalRegular.eot");
+  src: url("../fonts/UniversLightNormalRegular.eot") format("embedded-opentype"), url("../fonts/UniversLightNormalRegular.woff2") format("woff2"), url("../fonts/UniversLightNormalRegular.woff") format("woff"), url("../fonts/UniversLightNormalRegular.ttf") format("truetype"), url("../fonts/UniversLightNormalRegular.svg#UniversLightNormalRegular") format("svg");
 }
 body {
   font-family: "UniversLightNormalRegular";
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    max-width: 1232px;
+  }
+}
 #footer {
   background: #0F2335;
-  color: #fff;
+  color: #D9D9D9;
 }
 #footer .title-section h1 {
   font-family: "MinionProRegular";
@@ -39,6 +45,25 @@ body {
   list-style: none;
   display: inline-block;
   padding-right: 10px;
+}
+#footer .footer-menus-wrapper .footer-menu-left .footer-block .title-col {
+  font-size: 13px;
+}
+#footer .footer-menus-wrapper .footer-menu-left .footer-block ul li {
+  list-style: none;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+#footer .footer-menus-wrapper .footer-menu-left .footer-block ul li a {
+  color: #D9D9D9;
+  display: block;
+}
+#footer .footer-menus-wrapper .footer-right {
+  font-size: 13px;
+}
+#footer .footer-menus-wrapper .footer-right .title-col-large {
+  font-size: 22px;
+  font-family: "MinionProRegular";
 }
 
 /*# sourceMappingURL=main.css.map */
