@@ -100,6 +100,7 @@
     <script src="<?php bloginfo('template_url'); ?>/assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/vendor/select2/js/select2.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/vendor/slick/js/slick.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/script.js"></script>
   </div>
 <?php wp_footer(); ?>
 </body>
