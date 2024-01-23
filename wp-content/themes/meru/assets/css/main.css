@@ -15,9 +15,16 @@
 body {
   font-family: 'UniversLightNormalRegular'; }
 
+figure {
+  margin: 0; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1400px; } }
+
+.wp-block-image.size-full img {
+  width: 100%;
+  object-fit: cover; }
 
 .rk-footer {
   background: #0F2335;
