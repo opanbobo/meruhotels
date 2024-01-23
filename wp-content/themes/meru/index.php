@@ -8,45 +8,63 @@
 
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/vendor/select2/css/select2.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/main.css">
   
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar w/ text</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
-    </div>
-  </div>
-</nav>
+<body >
   <div id="wrapper">
 
     
   </div>
-  <footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-      <script src="<?php bloginfo('template_url'); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  </footer>
+  <div id="footer" class="py-5">
+    <div class="container">
+      <div class="title-section text-center">
+        <h1>Join Our Exclusive Mailing List for a Refined Experience</h1>
+      </div>
+      <div class="subtitle text-center">
+        <p>Your visit has been truly delightful and we can't wait to enhance your next stay even further. Subscribe to our mailing list for a world of elevated experiences awaiting you.</p>
+      </div>
+      <div class="form text-center">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="" placeholder="Enter email">
+          </div>
+        </form>
+      </div>
+      <div class="after-form text-center">
+        <p>By subscribing, you are agreeing to our terms and conditions. See privacy policy for more.</p>
+      </div>
+      <div class="footermenus-wrapper">
+
+      </div>
+      <div class="footer-bottom d-flex justify-content-between">
+        <div class="footer-bottom-left flex">
+          <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-meru-bottom.png" alt="" class="img-fluid"></a>
+          <a href="#" class="pt-4"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-bumn-footer.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="footer-bottom-right">
+          <ul>
+            <li><a href="#" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico-twt.png" alt="" class="img-fluid"></a></li>
+            <li><a href="#" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico-fb.png" alt="" class="img-fluid"></a></li>
+            <li><a href="#" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico-tiktok.png" alt="" class="img-fluid"></a></li>
+            <li><a href="#" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico-ig.png" alt="" class="img-fluid"></a></li>
+            <li><a href="#" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico-yt.png" alt="" class="img-fluid"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/vendor/select2/js/select2.min.js"></script>
+  </div>
 <?php wp_footer(); ?>
 </body>
 </html>
