@@ -12,6 +12,14 @@
   src: url("../fonts/UniversLightNormalRegular.eot");
   src: url("../fonts/UniversLightNormalRegular.eot") format("embedded-opentype"), url("../fonts/UniversLightNormalRegular.woff2") format("woff2"), url("../fonts/UniversLightNormalRegular.woff") format("woff"), url("../fonts/UniversLightNormalRegular.ttf") format("truetype"), url("../fonts/UniversLightNormalRegular.svg#UniversLightNormalRegular") format("svg"); }
 
+@font-face {
+  font-family: 'Voyage';
+  src: url("../fonts/Voyage-Regular.eot");
+  src: url("../fonts/Voyage-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Voyage-Regular.woff2") format("woff2"), url("../fonts/Voyage-Regular.woff") format("woff"), url("../fonts/Voyage-Regular.ttf") format("truetype"), url("../fonts/Voyage-Regular.svg#Voyage-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 body {
   font-family: 'UniversLightNormalRegular';
   overflow-x: hidden; }
@@ -56,6 +64,10 @@ figure {
   border-color: #C36110;
   font-size: 32px;
   font-weight: 400; }
+
+.title-overlay-top-section {
+  font-family: 'Voyage';
+  font-size: 70px !important; }
 
 @media (min-width: 1200px) {
   .spa-column-wrapper {
