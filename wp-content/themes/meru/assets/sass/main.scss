@@ -32,6 +32,10 @@ figure{
   margin: 0;
 }
 
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1400px;
@@ -87,6 +91,44 @@ figure{
     object-fit: cover;
     @media (min-width: 1200px) {
       height: 450px;
+    }
+  }
+}
+
+
+/// experience
+////////////////
+.block-exp{
+  .floating-block-exp{
+    padding: 20px;
+    background: rgba(15, 35, 53, 0.39);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    .title-exp-block{
+      font-family: 'MinionProRegular';
+      font-size: 40px; 
+    }
+    .desc-exp{
+      font-size: 18px;
+    }
+    .btn-discover{
+      color: #fff;
+      font-size: 20px;
+      border: 1px solid;
+      border-radius: 8px;
+      padding: 8px 40px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      &:hover{
+        background-color: #fff;
+        color: #000;
+      }
     }
   }
 }
