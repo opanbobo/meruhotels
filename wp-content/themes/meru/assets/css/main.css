@@ -64,6 +64,39 @@ figure {
     .spa-column-wrapper img {
       height: 450px; } }
 
+.form-subs .w-70 {
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .form-subs .w-70 {
+      width: 72%; } }
+  .form-subs .w-70 input {
+    width: 100%; }
+
+.form-subs input {
+  background-color: transparent;
+  background: url(../img/bg-form-subs.png) no-repeat;
+  border: none;
+  outline: none;
+  line-height: 95px;
+  padding-left: 20px;
+  font-size: 18px; }
+  @media (max-width: 563px) {
+    .form-subs input {
+      background-size: 100%;
+      line-height: 80px; } }
+  .form-subs input:focus {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none; }
+
+.form-subs .btn-submit-subs {
+  background-color: #C36110;
+  color: #0F2335;
+  font-family: 'MinionProRegular';
+  font-size: 20px;
+  border: none; }
+
 .rk-footer {
   background: #0F2335;
   color: #D9D9D9; }
@@ -83,6 +116,8 @@ figure {
     list-style: none;
     display: inline-block;
     padding-right: 10px; }
+    .rk-footer .footer-bottom-right ul li:hover {
+      opacity: 0.5; }
   .rk-footer .footer-menus-wrapper .footer-menu-left .footer-block .title-col {
     font-size: 13px; }
   .rk-footer .footer-menus-wrapper .footer-menu-left .footer-block ul li {
