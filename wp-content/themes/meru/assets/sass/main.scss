@@ -143,6 +143,43 @@ figure{
   }
 }
 
+.home-exp-wrapper{
+  background-color: #F0EEDC;
+  color: #4D4D4D;
+  .home-exp-title{
+    font-size: 48px;
+    font-family: 'Voyage';
+  }
+  .home-exp-desc{
+    font-size: 20px;
+    line-height: 185.2%; /* 37.04px */ 
+  }
+  .home-exp-wrapper-list{
+    li{
+      list-style: none;
+      font-size: 24px;
+      font-family: 'Voyage';
+      font-weight: 700; 
+      margin-bottom: 15px;
+      a{
+        color: #4D4D4D;
+        .arrow-img{
+          display: inline-flex;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .btn-home-exp-more{
+    font-size: 20px; 
+    &:hover{
+      color: #fff;
+      background: #DC7C47;
+      border-color: #DC7C47;
+    }
+  }
+}
+
 
 /// wellness
 ///////////////
