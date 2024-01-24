@@ -143,6 +143,56 @@ header.wp-block-template-part {
       margin: auto;
     }
   }
+  .btn-overlay-img{
+    background: linear-gradient(122deg, #DC7C47 23.99%, #A04B1F 57.64%, #8A471A 91.29%);
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'MinionProRegular';
+    border-radius: 7px;
+    text-decoration: none;
+    &:hover{
+      background: #fff;
+      color: #DC7C47;
+    }
+  }
+}
+
+.home-exp-wrapper{
+  background-color: #F0EEDC;
+  color: #4D4D4D;
+  .home-exp-title{
+    font-size: 48px;
+    font-family: 'Voyage';
+  }
+  .home-exp-desc{
+    font-size: 20px;
+    line-height: 185.2%; /* 37.04px */
+  }
+  .home-exp-wrapper-list{
+    li{
+      list-style: none;
+      font-size: 24px;
+      font-family: 'Voyage';
+      font-weight: 700;
+      margin-bottom: 15px;
+      a{
+        color: #4D4D4D;
+        .arrow-img{
+          display: inline-flex;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .btn-home-exp-more{
+    font-size: 20px;
+    &:hover{
+      color: #fff;
+      background: #DC7C47;
+      border-color: #DC7C47;
+    }
+  }
 }
 
 
@@ -244,13 +294,9 @@ header.wp-block-template-part {
   color: #D9D9D9;
   .title-section{
     h1{
-      font-family: 'MinionProRegular';
-      background: linear-gradient(122deg, #DC7C47 23.99%, #A04B1F 57.64%, #8A471A 91.29%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 45px;
-      text-transform: uppercase;
+      font-family: 'Voyage';
+      font-size: 40px;
+      color: #fff;
     }
   }
   .subtitle{
