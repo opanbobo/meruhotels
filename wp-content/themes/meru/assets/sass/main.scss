@@ -121,12 +121,24 @@ figure{
     font-family: 'Voyage';
     font-size: 48px !important; 
   }
-  
   .desc-overlay-img{
     font-size: 24px; 
     @media (min-width: 1200px) {
       width: 83%;
       margin: auto;
+    }
+  }
+  .btn-overlay-img{
+    background: linear-gradient(122deg, #DC7C47 23.99%, #A04B1F 57.64%, #8A471A 91.29%);
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px; 
+    font-family: 'MinionProRegular';
+    border-radius: 7px;
+    text-decoration: none;
+    &:hover{
+      background: #fff;
+      color: #DC7C47;
     }
   }
 }
