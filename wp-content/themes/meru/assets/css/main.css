@@ -102,6 +102,34 @@ figure {
     background: #fff;
     color: #DC7C47; }
 
+.home-exp-wrapper {
+  background-color: #F0EEDC;
+  color: #4D4D4D; }
+  .home-exp-wrapper .home-exp-title {
+    font-size: 48px;
+    font-family: 'Voyage'; }
+  .home-exp-wrapper .home-exp-desc {
+    font-size: 20px;
+    line-height: 185.2%;
+    /* 37.04px */ }
+  .home-exp-wrapper .home-exp-wrapper-list li {
+    list-style: none;
+    font-size: 24px;
+    font-family: 'Voyage';
+    font-weight: 700;
+    margin-bottom: 15px; }
+    .home-exp-wrapper .home-exp-wrapper-list li a {
+      color: #4D4D4D; }
+      .home-exp-wrapper .home-exp-wrapper-list li a .arrow-img {
+        display: inline-flex;
+        margin-left: 10px; }
+  .home-exp-wrapper .btn-home-exp-more {
+    font-size: 20px; }
+    .home-exp-wrapper .btn-home-exp-more:hover {
+      color: #fff;
+      background: #DC7C47;
+      border-color: #DC7C47; }
+
 @media (min-width: 1200px) {
   .spa-column-wrapper {
     margin-right: -10%; } }
