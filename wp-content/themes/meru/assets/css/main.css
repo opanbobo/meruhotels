@@ -13,7 +13,8 @@
   src: url("../fonts/UniversLightNormalRegular.eot") format("embedded-opentype"), url("../fonts/UniversLightNormalRegular.woff2") format("woff2"), url("../fonts/UniversLightNormalRegular.woff") format("woff"), url("../fonts/UniversLightNormalRegular.ttf") format("truetype"), url("../fonts/UniversLightNormalRegular.svg#UniversLightNormalRegular") format("svg"); }
 
 body {
-  font-family: 'UniversLightNormalRegular'; }
+  font-family: 'UniversLightNormalRegular';
+  overflow-x: hidden; }
 
 figure {
   margin: 0; }
@@ -25,6 +26,43 @@ figure {
 .wp-block-image.size-full.h-600 img {
   width: 100%;
   object-fit: cover; }
+  @media (min-width: 1200px) {
+    .wp-block-image.size-full.h-600 img {
+      height: 600px; } }
+
+.title-section-page {
+  font-family: 'MinionProRegular';
+  font-size: 56px;
+  color: #0F2335; }
+
+.subtitle-section-page-top {
+  font-size: 28px;
+  font-weight: 500;
+  color: #4D4D4D;
+  line-height: 150%; }
+
+.subtitle-section-page {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4D4D4D;
+  line-height: 150%; }
+
+.btn-outline-primary {
+  font-family: 'MinionProRegular';
+  color: #C36110;
+  border-color: #C36110;
+  font-size: 32px;
+  font-weight: 400; }
+
+@media (min-width: 1200px) {
+  .spa-column-wrapper {
+    margin-right: -10%; } }
+
+.spa-column-wrapper img {
+  object-fit: cover; }
+  @media (min-width: 1200px) {
+    .spa-column-wrapper img {
+      height: 450px; } }
 
 .rk-footer {
   background: #0F2335;
@@ -35,7 +73,8 @@ figure {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 46px; }
+    font-size: 45px;
+    text-transform: uppercase; }
   .rk-footer .subtitle p {
     font-size: 22px; }
   .rk-footer .after-form {

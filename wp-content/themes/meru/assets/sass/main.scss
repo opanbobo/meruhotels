@@ -25,6 +25,7 @@
 //////////////
 body{
   font-family: 'UniversLightNormalRegular';
+  overflow-x: hidden;
 }
 
 figure{
@@ -41,14 +42,54 @@ figure{
   img{
     width: 100%;
     object-fit: cover;
-    // height: 600px;
+    @media (min-width: 1200px) {
+      height: 600px;
+    }
   }
+}
+
+.title-section-page{
+  font-family: 'MinionProRegular';
+  font-size: 56px;
+  color: #0F2335; 
+}
+
+.subtitle-section-page-top{
+  font-size: 28px;
+  font-weight: 500; 
+  color: #4D4D4D; 
+  line-height: 150%;
+}
+
+.subtitle-section-page{
+  font-size: 20px;
+  font-weight: 500; 
+  color: #4D4D4D; 
+  line-height: 150%;
+}
+
+.btn-outline-primary{
+  font-family: 'MinionProRegular';
+  color: #C36110;
+  border-color: #C36110;
+  font-size: 32px; 
+  font-weight: 400; 
 }
 
 
 /// wellness
 ///////////////
-
+.spa-column-wrapper{
+  @media (min-width: 1200px) {
+    margin-right: -10%;
+  }
+  img{
+    object-fit: cover;
+    @media (min-width: 1200px) {
+      height: 450px;
+    }
+  }
+}
 
 
 
@@ -64,7 +105,8 @@ figure{
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 46px;
+      font-size: 45px;
+      text-transform: uppercase;
     }
   }
   .subtitle{
