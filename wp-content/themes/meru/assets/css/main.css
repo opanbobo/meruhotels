@@ -19,6 +19,9 @@ body {
 figure {
   margin: 0; }
 
+.flex-grow-0 {
+  flex-grow: 0 !important; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1400px; } }
@@ -63,6 +66,34 @@ figure {
   @media (min-width: 1200px) {
     .spa-column-wrapper img {
       height: 450px; } }
+
+.block-exp .floating-block-exp {
+  padding: 20px;
+  background: rgba(15, 35, 53, 0.39);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column; }
+  .block-exp .floating-block-exp .title-exp-block {
+    font-family: 'MinionProRegular';
+    font-size: 40px; }
+  .block-exp .floating-block-exp .desc-exp {
+    font-size: 18px; }
+  .block-exp .floating-block-exp .btn-discover {
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 8px 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0; }
+    .block-exp .floating-block-exp .btn-discover:hover {
+      background-color: #fff;
+      color: #000; }
 
 .form-subs .w-70 {
   width: 100%; }
