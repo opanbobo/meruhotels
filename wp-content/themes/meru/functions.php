@@ -53,6 +53,13 @@ function rk_image_sizes() {
 }
 add_action('after_setup_theme', 'rk_image_sizes');
 
+function custom_theme_menu_location() {
+    register_nav_menu('menu_location', __('Menu Location', 'theme-textdomain'));
+}
+
+add_action('after_setup_theme', 'custom_theme_menu_location');
+
+
 function rk_image_size_names_choose() {
     return [
 		'thumbnail'      => __( 'Thumbnail', 'rk' ),
