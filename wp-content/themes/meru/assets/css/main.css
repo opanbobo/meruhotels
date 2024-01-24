@@ -19,6 +19,15 @@ body {
   .container {
     max-width: 1400px; } }
 
+header.wp-block-template-part {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 10; }
+
+.rk-top-banner {
+  margin-top: -276px; }
+
 .rk-footer {
   background: #0F2335;
   color: #D9D9D9; }
