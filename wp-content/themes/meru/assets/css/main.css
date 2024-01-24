@@ -22,7 +22,7 @@ figure {
   .container {
     max-width: 1400px; } }
 
-.wp-block-image.size-full img {
+.wp-block-image.size-full.h-600 img {
   width: 100%;
   object-fit: cover; }
 
