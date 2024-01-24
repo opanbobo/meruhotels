@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+@import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
 @font-face {
   font-family: 'MinionProRegular';
   src: url('../fonts/MinionProRegular.eot');
@@ -56,6 +57,12 @@ figure{
   }
 }
 
+.universe-28{
+  font-family: 'Univers LT Std', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
 .wp-block-image.size-full.h-600{
   img{
     width: 100%;
@@ -67,7 +74,8 @@ figure{
 }
 
 .title-section-page{
-  font-family: 'MinionProRegular';
+  // font-family: 'MinionProRegular';
+  font-family: 'Voyage';
   font-size: 56px;
   color: #0F2335; 
 }
@@ -80,7 +88,7 @@ figure{
 }
 
 .subtitle-section-page{
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 500; 
   color: #4D4D4D; 
   line-height: 150%;
@@ -99,6 +107,29 @@ figure{
   font-size: 70px !important; 
 }
 
+
+/// home
+///////////////
+.home{
+  .section-overlay-page{
+    .wp-block-cover__background{
+      background-color: #0F2335;
+      opacity: .7;
+    }
+  }
+  .title-overlay-img{
+    font-family: 'Voyage';
+    font-size: 48px !important; 
+  }
+  
+  .desc-overlay-img{
+    font-size: 24px; 
+    @media (min-width: 1200px) {
+      width: 83%;
+      margin: auto;
+    }
+  }
+}
 
 
 /// wellness
