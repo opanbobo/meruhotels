@@ -241,6 +241,32 @@ header.wp-block-template-part {
   }
 }
 
+.rk-retreat {
+  height: 557px;
+}
+
+.rk-retreat-box {
+  background: #F0EEDC;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 286px;
+  padding: 25px 40px;
+
+  .slick-center & {
+    width: 586px;
+  }
+}
+
+.rk-retreat-content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  .slick-center & {
+    height: 110px;
+  }
+}
+
 
 /// experience
 ////////////////

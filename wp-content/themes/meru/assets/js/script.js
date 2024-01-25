@@ -9,7 +9,11 @@ jQuery(document).ready(function($) {
 
     // $('.rk-select2').select2();
 
-
+    $('.rk-retreat').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3
+    });
 
 
 
