@@ -4,6 +4,7 @@ require( get_template_directory() . '/shortcode/post.php' );
 require( get_template_directory() . '/shortcode/form-newsletter.php' );
 require( get_template_directory() . '/shortcode/select-destination.php' );
 require( get_template_directory() . '/shortcode/slider.php' );
+require( get_template_directory() . '/shortcode/room.php' );
 
 require( get_template_directory() . '/blocks/init.php' );
 

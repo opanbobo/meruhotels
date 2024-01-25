@@ -268,6 +268,81 @@ header.wp-block-template-part {
 }
 
 
+.rk-room-images {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/fullscreen.svg) center center no-repeat;
+  }
+
+  &.slick-dotted.slick-slider {
+    margin-bottom: 5px;
+  }
+
+  .slick-dots {
+    bottom: 0px;
+
+    li {
+
+      button:before {
+        content: '';
+        background: white;
+        border-radius: 10px;
+        width: 11px;
+        height: 11px;
+        border: 2px solid white;
+        opacity: 1;
+      }
+
+      &.slick-active {
+        button:before {
+          background: black;
+        }
+      }
+    }
+
+  }
+}
+
+.rk-room {
+  margin-bottom: 60px;
+}
+
+.rk-room-content {
+  padding: 40px 50px 0;
+  background: #0F2335;
+  color: #D9D9D9;
+  font-size: 12px;
+  min-height: 260px;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+}
+
+.rk-room-title {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.rk-room-4 {
+  .rk-room-content {
+    min-height: 191px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rk-room-text {
+    width: 580px;
+  }
+}
+
+
 /// experience
 ////////////////
 .block-exp{
