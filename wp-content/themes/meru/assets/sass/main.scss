@@ -61,10 +61,31 @@ figure{
 //////////////
 
 header.wp-block-template-part {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 140px;
+  padding-bottom: 140px;
   position: relative;
   z-index: 10;
+  margin-bottom: -304px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wp-block-navigation__responsive-container-open svg {
+  color: #D9D9D9;
+}
+
+.wp-block-navigation__responsive-container-close {
+  top: 141px;
+  right: 30px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding: 0 20px;
 }
 
 .rk-top-banner {
