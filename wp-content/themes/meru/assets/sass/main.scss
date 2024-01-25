@@ -120,6 +120,9 @@ header.wp-block-template-part {
   font-family: 'Univers LT Std', sans-serif;
   font-size: 28px;
   font-weight: 700;
+  @media screen and (max-width:768px) {
+    font-size: 24px;
+  }
 }
 
 .wp-block-image.size-full.h-600{
@@ -137,6 +140,9 @@ header.wp-block-template-part {
   font-family: 'Voyage';
   font-size: 56px;
   color: #0F2335;
+  @media screen and (max-width:768px) {
+    font-size: 50px;
+  }
 }
 
 .subtitle-section-page-top{
@@ -151,6 +157,9 @@ header.wp-block-template-part {
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+  }
 }
 
 .btn-outline-primary{
@@ -164,6 +173,9 @@ header.wp-block-template-part {
 .title-overlay-top-section{
   font-family: 'Voyage';
   font-size: 70px !important;
+  @media screen and (max-width:768px) {
+    font-size: 52px !important;
+  }
 }
 
 
@@ -179,10 +191,16 @@ header.wp-block-template-part {
   .title-overlay-img{
     font-family: 'Voyage';
     font-size: 48px !important;
+    @media screen and (max-width:768px) {
+      font-size: 42px !important;
+    }
   }
 
   .desc-overlay-img{
     font-size: 24px;
+    @media screen and (max-width:768px) {
+      font-size: 20px !important;
+    }
     @media (min-width: 1200px) {
       width: 83%;
       margin: auto;
@@ -213,6 +231,9 @@ header.wp-block-template-part {
   .home-exp-desc{
     font-size: 20px;
     line-height: 185.2%; /* 37.04px */
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+    }
   }
   .home-exp-wrapper-list{
     li{
@@ -399,6 +420,13 @@ header.wp-block-template-part {
 
 // footer
 //////////////
+.column-btn-footer{
+  @media screen and (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .form-subs{
   .w-70{
     width: 100%;
@@ -453,10 +481,21 @@ header.wp-block-template-part {
   .subtitle{
     p{
       font-size: 22px;
+      @media screen and (max-width:768px) {
+        font-size: 18px;
+      }
     }
   }
   .after-form{
     font-size: 22px;
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+    }
+  }
+  .footer-bottom{
+    @media screen and (max-width:768px) {
+      justify-content: center !important;
+    }
   }
   .footer-bottom-right{
     ul{
@@ -471,6 +510,9 @@ header.wp-block-template-part {
     }
   }
   .footer-menus-wrapper{
+    @media screen and (max-width:768px) {
+      padding-bottom: 0 !important;
+    }
     .footer-menu-left{
       .footer-block{
         .title-col{
