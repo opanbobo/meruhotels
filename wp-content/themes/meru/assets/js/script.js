@@ -16,5 +16,21 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('.rk-room-images').slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+        draggable: false,
+    });
+
+    $('.rk-room').each(function(i, el){
+        var $el = $(el);
+
+        var lightboxDescription = GLightbox({
+            selector: '.rk-room-' + i + ' .rk-room-image-link',
+        });
+    });
+
+
 
 });
