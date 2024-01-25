@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-@import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
+// @import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
 @font-face {
   font-family: 'MinionProRegular';
   src: url('../fonts/MinionProRegular.eot');
@@ -59,6 +59,16 @@ figure{
 
 // header
 //////////////
+.btn-top-header{
+  font-size: 20px !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-color: #fff !important;
+  &:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
 
 header.wp-block-template-part {
   padding-top: 140px;
