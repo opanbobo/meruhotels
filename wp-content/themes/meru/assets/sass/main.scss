@@ -57,6 +57,41 @@ figure{
   }
 }
 
+// header
+//////////////
+
+header.wp-block-template-part {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -304px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wp-block-navigation__responsive-container-open svg {
+  color: #D9D9D9;
+}
+
+.wp-block-navigation__responsive-container-close {
+  top: 141px;
+  right: 30px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding: 0 20px;
+}
+
+.rk-top-banner {
+  margin-top: -276px;
+}
+
 .universe-28{
   font-family: 'Univers LT Std', sans-serif;
   font-size: 28px;
@@ -77,20 +112,20 @@ figure{
   // font-family: 'MinionProRegular';
   font-family: 'Voyage';
   font-size: 56px;
-  color: #0F2335; 
+  color: #0F2335;
 }
 
 .subtitle-section-page-top{
   font-size: 28px;
-  font-weight: 500; 
-  color: #4D4D4D; 
+  font-weight: 500;
+  color: #4D4D4D;
   line-height: 150%;
 }
 
 .subtitle-section-page{
   font-size: 28px;
-  font-weight: 500; 
-  color: #4D4D4D; 
+  font-weight: 500;
+  color: #4D4D4D;
   line-height: 150%;
 }
 
@@ -98,13 +133,13 @@ figure{
   font-family: 'MinionProRegular';
   color: #C36110;
   border-color: #C36110;
-  font-size: 32px; 
-  font-weight: 400; 
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .title-overlay-top-section{
   font-family: 'Voyage';
-  font-size: 70px !important; 
+  font-size: 70px !important;
 }
 
 
@@ -119,10 +154,11 @@ figure{
   }
   .title-overlay-img{
     font-family: 'Voyage';
-    font-size: 48px !important; 
+    font-size: 48px !important;
   }
+
   .desc-overlay-img{
-    font-size: 24px; 
+    font-size: 24px;
     @media (min-width: 1200px) {
       width: 83%;
       margin: auto;
@@ -132,7 +168,7 @@ figure{
     background: linear-gradient(122deg, #DC7C47 23.99%, #A04B1F 57.64%, #8A471A 91.29%);
     color: #fff;
     padding: 10px 30px;
-    font-size: 20px; 
+    font-size: 20px;
     font-family: 'MinionProRegular';
     border-radius: 7px;
     text-decoration: none;
@@ -152,14 +188,14 @@ figure{
   }
   .home-exp-desc{
     font-size: 20px;
-    line-height: 185.2%; /* 37.04px */ 
+    line-height: 185.2%; /* 37.04px */
   }
   .home-exp-wrapper-list{
     li{
       list-style: none;
       font-size: 24px;
       font-family: 'Voyage';
-      font-weight: 700; 
+      font-weight: 700;
       margin-bottom: 15px;
       a{
         color: #4D4D4D;
@@ -171,7 +207,7 @@ figure{
     }
   }
   .btn-home-exp-more{
-    font-size: 20px; 
+    font-size: 20px;
     &:hover{
       color: #fff;
       background: #DC7C47;
@@ -211,7 +247,7 @@ figure{
     flex-direction: column;
     .title-exp-block{
       font-family: 'MinionProRegular';
-      font-size: 40px; 
+      font-size: 40px;
     }
     .desc-exp{
       font-size: 18px;
@@ -270,7 +306,7 @@ figure{
     background-color: #C36110;
     color: #0F2335;
     font-family: 'MinionProRegular';
-    font-size: 20px; 
+    font-size: 20px;
     border: none;
   }
 }
@@ -280,7 +316,7 @@ figure{
   .title-section{
     h1{
       font-family: 'Voyage';
-      font-size: 40px; 
+      font-size: 40px;
       color: #fff;
     }
   }
@@ -321,6 +357,17 @@ figure{
             }
           }
         }
+      }
+    }
+    .footer-menu-center {
+      margin-bottom: 0;
+      list-style: none;
+      text-align: center;
+      a {
+        color: #D9D9D9;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        display: inline-block;
       }
     }
     .footer-right{
