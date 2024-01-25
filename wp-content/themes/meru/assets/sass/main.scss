@@ -434,6 +434,10 @@ header.wp-block-template-part {
     font-family: 'MinionProRegular';
     font-size: 20px;
     border: none;
+
+    @media screen and (max-width:768px) {
+      margin-left: 0 !important;
+    }
   }
 }
 .rk-footer{
@@ -498,6 +502,13 @@ header.wp-block-template-part {
     }
     .footer-right{
       font-size: 13px;
+      @media screen and (max-width:768px) {
+        text-align: center;
+        .block{
+          margin-top: 20px;
+          text-align: center !important;
+        }
+      }
       .title-col-large{
         font-size: 22px;
         font-family: 'MinionProRegular';
