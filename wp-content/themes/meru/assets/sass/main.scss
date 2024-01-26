@@ -467,6 +467,21 @@ header.wp-block-template-part {
 }
 
 
+// modal
+.modal-xl {
+  max-width: 1400px;
+}
+
+.rk-close {
+  float: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  background: url(../img/cross.svg) center center no-repeat;
+}
+
 
 // footer
 //////////////
