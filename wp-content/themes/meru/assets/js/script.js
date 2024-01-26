@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 
     $('.rk-room-images').slick({
         slidesToShow: 1,
-        dots: true,
+        dots: false,
         arrows: false,
         draggable: false,
     });
