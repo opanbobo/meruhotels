@@ -10,7 +10,7 @@ function rk_form_newsletter( $atts, $content = null ) {
 	], $atts );
 
     $output  = '<div class="form text-center my-5">';
-    $output .= '<form class="form-subs form-inline">';
+    $output .= '<form class="form-subs form-inline justify-content-center">';
     $output .= '<div class="form-group w-70">';
     $output .= '<input type="text" class="form-control" id="" placeholder="Enter email">';
     $output .= '</div>';
