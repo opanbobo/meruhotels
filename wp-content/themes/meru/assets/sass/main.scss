@@ -151,6 +151,26 @@ header.wp-block-template-part {
   }
 }
 
+.universe-20{
+  font-family: 'Univers LT Std', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.85;
+  color: #4d4d4d;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
+.voyage-48{
+  font-family: 'Voyage';
+  font-size: 40px;
+  color: #4D4D4D;
+  @media screen and (max-width:768px) {
+    font-size: 48px;
+  }
+}
+
 .wp-block-image.size-full.h-600{
   img{
     width: 100%;
@@ -386,7 +406,7 @@ header.wp-block-template-part {
   min-height: 260px;
   letter-spacing: 0.05em;
   line-height: 23px;
-  letter-spacing: 1.3px; 
+  letter-spacing: 1.3px;
 }
 
 .rk-room-title {
