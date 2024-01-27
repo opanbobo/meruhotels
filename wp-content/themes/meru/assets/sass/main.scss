@@ -152,7 +152,7 @@ header.wp-block-template-part {
 
 .universe-28{
   font-family: 'Univers LT Std', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   @media screen and (max-width:768px) {
     font-size: 16px;
@@ -201,7 +201,7 @@ header.wp-block-template-part {
 .title-section-page{
   // font-family: 'MinionProRegular';
   font-family: 'Voyage';
-  font-size: 50px;
+  font-size: 48px;
   color: #0F2335;
   @media screen and (max-width:768px) {
     font-size: 48px;
@@ -209,7 +209,7 @@ header.wp-block-template-part {
 }
 
 .subtitle-section-page-top{
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
@@ -235,7 +235,7 @@ header.wp-block-template-part {
 
 .title-overlay-top-section{
   font-family: 'Voyage';
-  font-size: 65px !important;
+  font-size: 60px !important;
   @media screen and (max-width:768px) {
     font-size: 46px !important;
   }
@@ -260,9 +260,9 @@ header.wp-block-template-part {
   }
 
   .desc-overlay-img{
-    font-size: 22px;
+    font-size: 18px;
     @media screen and (max-width:768px) {
-      font-size: 18px !important;
+      font-size: 16px !important;
     }
     @media (min-width: 1200px) {
       width: 83%;
@@ -292,8 +292,11 @@ header.wp-block-template-part {
   background-color: #F0EEDC;
   color: #4D4D4D;
   .home-exp-title{
-    font-size: 48px;
+    font-size: 48px !important;
     font-family: 'Voyage';
+    @media screen and (max-width:768px) {
+      font-size: 42px !important;
+    }
   }
   .home-exp-desc{
     font-size: 18px;
