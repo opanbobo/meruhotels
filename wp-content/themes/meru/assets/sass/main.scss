@@ -65,7 +65,7 @@ figure{
   font-size: 52px !important;
   font-family: 'Voyage' !important;
   @media screen and (max-width: 768px) {
-    font-size: 45px !important;
+    font-size: 40px !important;
   }
 }
 
@@ -152,10 +152,10 @@ header.wp-block-template-part {
 
 .universe-28{
   font-family: 'Univers LT Std', sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 700;
   @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -201,10 +201,10 @@ header.wp-block-template-part {
 .title-section-page{
   // font-family: 'MinionProRegular';
   font-family: 'Voyage';
-  font-size: 56px;
+  font-size: 50px;
   color: #0F2335;
   @media screen and (max-width:768px) {
-    font-size: 50px;
+    font-size: 48px;
   }
 }
 
@@ -216,12 +216,12 @@ header.wp-block-template-part {
 }
 
 .subtitle-section-page{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
   @media screen and (max-width:768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -237,7 +237,7 @@ header.wp-block-template-part {
   font-family: 'Voyage';
   font-size: 65px !important;
   @media screen and (max-width:768px) {
-    font-size: 48px !important;
+    font-size: 46px !important;
   }
 }
 
@@ -260,7 +260,7 @@ header.wp-block-template-part {
   }
 
   .desc-overlay-img{
-    font-size: 24px;
+    font-size: 22px;
     @media screen and (max-width:768px) {
       font-size: 18px !important;
     }
@@ -502,6 +502,10 @@ header.wp-block-template-part {
 
 // footer
 //////////////
+.logo-meru-bottom{
+  width: 70% !important;
+  margin-top: 10px;
+}
 .footer-bottom-left{
   a{
     img{
@@ -568,22 +572,25 @@ header.wp-block-template-part {
   .title-section{
     h1{
       font-family: 'Voyage';
-      font-size: 40px;
+      font-size: 35px;
       color: #fff;
+      @media screen and (max-width:768px) {
+        font-size: 30px;
+      }
     }
   }
   .subtitle{
     p{
-      font-size: 22px;
+      font-size: 18px;
       @media screen and (max-width:768px) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
   .after-form{
-    font-size: 22px;
+    font-size: 18px;
     @media screen and (max-width:768px) {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .footer-bottom-right{
