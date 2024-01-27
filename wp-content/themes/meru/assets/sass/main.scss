@@ -100,9 +100,13 @@ header.wp-block-template-part {
 
 .header-logo {
   position: absolute;
-  top: 80px;
+  top: 127px;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
+  a{
+    width: 145px;
+  }
 }
 
 .wp-block-navigation__responsive-container-open {
@@ -173,7 +177,7 @@ header.wp-block-template-part {
 .universe-12{
   font-family: 'Univers LT Std', sans-serif;
   color: #4D4D4D;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 23px;
   letter-spacing: 1.3px;
