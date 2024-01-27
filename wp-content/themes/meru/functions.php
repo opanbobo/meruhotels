@@ -21,7 +21,7 @@ function rk_enqueue_styles() {
     wp_register_style( 'rk-slick-theme', get_stylesheet_directory_uri() . '/assets/vendor/slick/css/slick-theme.css', [], '0.0.1' );
 
     // Template Main CSS File
-    wp_register_style( 'rk-main', get_stylesheet_directory_uri() . '/assets/css/main.css', [], '0.0.1' );
+    wp_register_style( 'rk-style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], '0.0.1' );
 
     wp_enqueue_style( 'rk-bootstrap' );
     wp_enqueue_style( 'rk-bootstrap-icons' );
@@ -30,7 +30,7 @@ function rk_enqueue_styles() {
     wp_enqueue_style( 'rk-select2' );
     wp_enqueue_style( 'rk-slick' );
     wp_enqueue_style( 'rk-slick-theme' );
-    wp_enqueue_style( 'rk-main' );
+    wp_enqueue_style( 'rk-style' );
 
 
     wp_enqueue_script('rk-bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), '0.0.1', true);

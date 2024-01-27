@@ -33,8 +33,8 @@ module.exports = function(grunt) {
             /* Compile before minified */
             cssMain: {
                 files: {
-                '<%= config.theme %>/assets/css/main.css': '<%= config.theme %>/assets/sass/main.scss',
-                // '<%= config.theme %>/assets/css/editor.css': '<%= config.theme %>/assets/sass/editor.scss',
+                '<%= config.theme %>/assets/css/style.css': '<%= config.theme %>/assets/sass/style.scss',
+                '<%= config.theme %>/assets/css/editor.css': '<%= config.theme %>/assets/sass/editor.scss',
                 },
             },
         },
@@ -45,8 +45,8 @@ module.exports = function(grunt) {
             },
             cssMain: {
                 files: {
-                    '<%= config.theme %>/assets/css/main.min.css': [ '<%= config.theme %>/assets/css/main.css' ],
-                    // '<%= config.theme %>/assets/css/editor.min.css': [ '<%= config.theme %>/assets/css/editor.css' ],
+                    '<%= config.theme %>/assets/css/style.min.css': [ '<%= config.theme %>/assets/css/style.css' ],
+                    '<%= config.theme %>/assets/css/editor.min.css': [ '<%= config.theme %>/assets/css/editor.css' ],
                 },
             },
         },
