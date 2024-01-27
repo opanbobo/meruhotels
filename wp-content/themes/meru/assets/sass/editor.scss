@@ -1,0 +1,6 @@
+$additional-selector: ' > .block-editor-inner-blocks > .block-editor-block-list__layout';
+$additional-selector-id: '';
+$additional-important: ' !important';
+
+@import '../vendor/bootstrap/css/bootstrap.scss';
+@import 'main.scss';
