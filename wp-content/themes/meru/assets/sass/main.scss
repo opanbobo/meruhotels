@@ -106,6 +106,9 @@ header.wp-block-template-part {
   text-align: center;
   a{
     width: 145px;
+    @media screen and (max-width:768px) {
+      width: 100px;
+    }
   }
 }
 
@@ -250,6 +253,9 @@ header.wp-block-template-part {
 ///////////////
 .home{
   .section-overlay-page{
+    @media screen and (max-width:768px) {
+      min-height: 764px;
+    }
     .wp-block-cover__background{
       background-color: #0F2335;
       opacity: .7;
