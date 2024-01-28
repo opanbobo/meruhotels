@@ -259,6 +259,7 @@ header.wp-block-template-part {
 ///////////////
 .home{
   .section-overlay-page{
+    min-height: 730px;
     @media screen and (max-width:768px) {
       min-height: 764px;
     }
@@ -457,6 +458,10 @@ header.wp-block-template-part {
     display: flex;
     justify-content: center;
     text-align: center;
+    @media screen and (max-width:768px) {
+      text-align: left;
+      justify-content: left;
+    }
   }
 
   .rk-room-text {
