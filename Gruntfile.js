@@ -9,6 +9,9 @@ module.exports = function(grunt) {
         src: 'node_modules',
         tmp: '.tmp',
         theme: 'wp-content/themes/meru',
+        preUpload: 'pre-upload',
+        localUrl: 'http://localhost/meruhotels',
+        prodUrl: 'https://themerusanur.com',
     };
 
     grunt.initConfig({
@@ -16,6 +19,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         clean: {
             tmp: '<%= config.tmp %>',
+            preUpload: '<%= config.preUpload %>',
             css: [
                 '<%= config.theme %>/assets/css/*.css',
                 '<%= config.theme %>/assets/css/**/*.css',
@@ -72,6 +76,32 @@ module.exports = function(grunt) {
                 },
             },
         },
+        copy: {
+            preUpload: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.theme %>/templates',
+                        src: '**',
+                        dest2: '<%= config.preUpload %>/templates/',
+                        options2: {
+                            process2: function (content, srcpath) {
+                                return x;
+                            },
+                        },
+                    },
+                    {
+                        src: '<%= config.theme %>/parts/footer.html',
+                        dest: '<%= config.preUpload %>/parts/footer.html',
+                        options: {
+                            process: function (content, srcpath) {
+                                return content.replace(/[sad ]/g,"_");
+                            },
+                        },
+                    },
+                ]
+            }
+        },
         watch: {
             css: {
                 files: [
@@ -116,6 +146,11 @@ module.exports = function(grunt) {
     grunt.registerTask('cssMain', [
         'sass:cssMain',
         'cssmin:cssMain',
+    ]);
+
+    grunt.registerTask('preUpload', [
+        'clean:preUpload',
+        'copy:preUpload',
     ]);
 
     grunt.registerTask('default', [
