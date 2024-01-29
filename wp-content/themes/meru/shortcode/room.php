@@ -29,7 +29,7 @@ function rk_room( $atts, $content = null ) {
         ],
         [
             'title' => 'Presidential Suite',
-            'content' => 'Revel in the pinnacle of luxury with our Presidential Suite, the most prestigious accommodation at the resort. Spanning a lavish 209 square meters, this expansive haven offers unparalleled opulence and sophistication. With a private balcony or terrace, exclusive amenities, and a dedicated dining space, the Presidential Suite promises an extraordinary retreat, ensuring an unparalleled experience in the lap of resort luxury.',
+            'content' => 'Experience the epitome of luxury with our Presidential Suites, the most prestigious accommodation at the resort. These extensive 209 square meters, promises an extraordinary retreat, ensuring an unparalleled experience.',
         ],
     ];
 
