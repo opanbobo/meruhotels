@@ -20,7 +20,7 @@ function rk_home_popup( $atts, $content = null ) {
 
     $output .= '<div class="row">';
     $output .= '<div class="col-md-6">';
-    $output .= '<figure class="wp-block-image size-full "><img src="//localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
+    $output .= '<figure class="wp-block-image size-full "><img src="http://localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
     $output .= '</div>';
     $output .= '<div class="col-md-6 d-flex align-items-center">';
     $output .= '<div class="px-5 py-4">';
@@ -49,7 +49,7 @@ function rk_home_popup( $atts, $content = null ) {
 
     $output .= '<div class="row">';
     $output .= '<div class="col-md-6">';
-    $output .= '<figure class="wp-block-image size-full "><img src="//localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
+    $output .= '<figure class="wp-block-image size-full "><img src="http://localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
     $output .= '</div>';
     $output .= '<div class="col-md-6 d-flex align-items-center">';
     $output .= '<div class="px-5 py-4">';
@@ -79,7 +79,7 @@ function rk_home_popup( $atts, $content = null ) {
 
     $output .= '<div class="row">';
     $output .= '<div class="col-md-6">';
-    $output .= '<figure class="wp-block-image size-full "><img src="//localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
+    $output .= '<figure class="wp-block-image size-full "><img src="http://localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
     $output .= '</div>';
     $output .= '<div class="col-md-6 d-flex align-items-center">';
     $output .= '<div class="px-5 py-4">';
@@ -107,7 +107,7 @@ function rk_home_popup( $atts, $content = null ) {
 
     $output .= '<div class="row">';
     $output .= '<div class="col-md-6">';
-    $output .= '<figure class="wp-block-image size-full "><img src="//localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
+    $output .= '<figure class="wp-block-image size-full "><img src="http://localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
     $output .= '</div>';
     $output .= '<div class="col-md-6 d-flex align-items-center">';
     $output .= '<div class="px-5 py-4">';
@@ -136,7 +136,7 @@ function rk_home_popup( $atts, $content = null ) {
 
     $output .= '<div class="row">';
     $output .= '<div class="col-md-6">';
-    $output .= '<figure class="wp-block-image size-full "><img src="//localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
+    $output .= '<figure class="wp-block-image size-full "><img src="http://localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
     $output .= '</div>';
     $output .= '<div class="col-md-6 d-flex align-items-center">';
     $output .= '<div class="px-5 py-4">';
@@ -164,7 +164,7 @@ function rk_home_popup( $atts, $content = null ) {
 
     $output .= '<div class="row">';
     $output .= '<div class="col-md-6">';
-    $output .= '<figure class="wp-block-image size-full "><img src="//localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
+    $output .= '<figure class="wp-block-image size-full "><img src="http://localhost/meruhotels/wp-content/themes/meru/assets/img/arunika.jpg" alt="" class="wp-image-9999"></figure>';
     $output .= '</div>';
     $output .= '<div class="col-md-6 d-flex align-items-center">';
     $output .= '<div class="px-5 py-4">';
