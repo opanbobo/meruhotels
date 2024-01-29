@@ -13,23 +13,23 @@ function rk_room( $atts, $content = null ) {
     $content = [
         [
             'title' => 'Deluxe Suite',
-            'content' => 'Indulge in our Deluxe Suite Garden View, a spacious 83-square-meter retreat with a private balcony or terrace. Experience modern elegance seamlessly blending with nature, creating a tranquil escape for your resort stay.',
+            'content' => 'Experience the luxury of our Deluxe Suite, a spacious 83-square-meter retreat features a private balcony or expansive terrace overlooking our serene garden.',
         ],
         [
             'title' => 'Corner Suite',
-            'content' => 'Unwind in our Corner Suite Garden View at the resort, boasting a spacious 98 square meters, a private balcony or terrace, and a dedicated dining table. This elegantly appointed sanctuary invites you to savor tranquility amid lush surroundings. Immerse yourself in modern comfort and luxury for an extraordinary retreat.',
+            'content' => 'Indulge in the expansive comfort of our Corner Suite, featuring serene garden views. Offering a spacious 98 square meters, this suite includes a private balcony or terrace and a dedicated dining table for your convenience.',
         ],
         [
             'title' => 'Premier Suite',
-            'content' => 'Experience lavish comfort in our Premier Suite, a sprawling retreat of 125 square meters at the resort. This grand suite offers an abundance of space, complemented by a private balcony or terrace and the convenience of a dedicated dining table. Immerse yourself in the serene beauty of the resort\'s gardens while enjoying modern amenities. Your stay promises to be an indulgent blend of sophistication and relaxation in this generously appointed suite.',
+            'content' => 'Experience our Premier Suites, feature 125 square meters of space and a stunning view of our tranquil garden. Each suite is adorned with refined furnishings includes a private balcony or terrace, providing the ultimate of luxurious resort-style living.',
         ],
         [
             'title' => 'Meru Suite',
-            'content' => 'Elevate your resort experience with the Meru Suite, a luxurious haven spanning an impressive 160 square meters. This spacious retreat boasts a private balcony or terrace, a dedicated dining table, and modern amenities that redefine indulgence. Immerse yourself in the grandeur of this expansive suite, promising an unparalleled blend of comfort and sophistication amid the resort\'s stunning surroundings.',
+            'content' => 'An expansive comfort of our Meru Suite, featuring a separate living room with a terrace or balcony overlooking the tranquil garden. With a generous 160 square meters of space, this suite offers an exceptional living experience.',
         ],
         [
             'title' => 'Presidential Suite',
-            'content' => 'Indulge in our Deluxe Suite Garden View, a spacious 83-square-meter retreat with a private balcony or terrace. Experience modern elegance seamlessly blending with nature, creating a tranquil escape for your resort stay.',
+            'content' => 'Revel in the pinnacle of luxury with our Presidential Suite, the most prestigious accommodation at the resort. Spanning a lavish 209 square meters, this expansive haven offers unparalleled opulence and sophistication. With a private balcony or terrace, exclusive amenities, and a dedicated dining space, the Presidential Suite promises an extraordinary retreat, ensuring an unparalleled experience in the lap of resort luxury.',
         ],
     ];
 
