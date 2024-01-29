@@ -190,6 +190,9 @@ header.wp-block-template-part {
   letter-spacing: 0.05em;
   line-height: 23px;
   letter-spacing: 1.3px;
+  @media screen and (max-width:768px) {
+    font-size: 14px;
+  }
 }
 
 .voyage-48{
@@ -229,7 +232,7 @@ header.wp-block-template-part {
 }
 
 .subtitle-section-page{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
@@ -282,7 +285,7 @@ header.wp-block-template-part {
       font-size: 16px !important;
     }
     @media (min-width: 1200px) {
-      width: 1142px;
+      width: 742px;
       margin: auto;
     }
   }
@@ -444,6 +447,9 @@ header.wp-block-template-part {
   letter-spacing: 0.05em;
   line-height: 23px;
   letter-spacing: 1.3px;
+  @media screen and (max-width:768px) {
+    font-size: 14px;
+  }
 }
 
 .rk-room-title {
@@ -561,21 +567,20 @@ header.wp-block-template-part {
   }
   input{
     background-color: transparent;
-    background: url(../img/bg-form-subs.png) no-repeat;
-    border: none;
-    outline: none;
-    line-height: 95px;
+    border: 1px solid #fff;
+    // background: url(../img/bg-form-subs.png) no-repeat;
+    line-height: 45px;
     padding-left: 20px;
     font-size: 18px;
     @media (max-width: 563px) {
       background-size: 100%;
-      line-height: 80px;
+      line-height: 45px;
     }
     &:focus{
       background-color: transparent;
-      outline: none;
-      border: none;
-      box-shadow: none;
+      // outline: none;
+      // border: none;
+      // box-shadow: none;
     }
   }
   .btn-submit-subs{

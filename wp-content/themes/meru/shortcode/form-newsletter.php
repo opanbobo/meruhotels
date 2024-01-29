@@ -9,7 +9,7 @@ function rk_form_newsletter( $atts, $content = null ) {
 		'posts_per_page' => 8,
 	], $atts );
 
-    $output  = '<div class="form text-center my-5">';
+    $output  = '<div class="form text-center my-5 mx-3">';
     $output .= '<form class="form-subs form-inline justify-content-center">';
     $output .= '<div class="form-group w-70">';
     $output .= '<input type="text" class="form-control" id="" placeholder="Enter email">';
