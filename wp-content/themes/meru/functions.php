@@ -47,7 +47,7 @@ function rk_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'rk_enqueue_styles' );
 
 function rk_add_editor_styles() {
-    // add_editor_style(get_stylesheet_directory_uri() . '/assets/css/editor.css');
+    add_editor_style(get_stylesheet_directory_uri() . '/assets/css/editor.css');
 }
 add_action('init', 'rk_add_editor_styles');
 

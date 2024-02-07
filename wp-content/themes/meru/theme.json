@@ -1,0 +1,136 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-container",
+			"postTypes": ["page"],
+			"title": "Page No Contaier"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				},
+				{
+					"color": "#fff",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#000",
+					"name": "Black",
+					"slug": "black"
+				}
+			]
+		},
+		"spacing": {
+			"spacingScale": {
+				"steps": 0
+			}
+		},
+		"typography": {
+			"dropCap": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Voyage",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/Voyage-Regular.eot",
+								"file:./assets/fonts/Voyage-Regular.woff",
+								"file:./assets/fonts/Voyage-Regular.woff2",
+								"file:./assets/fonts/Voyage-Regular.ttf",
+								"file:./assets/fonts/Voyage-Regular.svg"
+							]
+						}
+					],
+					"fontFamily": "\"Voyage\", serif",
+					"name": "Voyage",
+					"slug": "voyage"
+				},
+                {
+					"fontFace": [
+						{
+							"fontFamily": "Univers",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/UniversLightNormalRegular.eot",
+								"file:./assets/fonts/UniversLightNormalRegular.woff",
+								"file:./assets/fonts/UniversLightNormalRegular.woff2",
+								"file:./assets/fonts/UniversLightNormalRegular.ttf",
+								"file:./assets/fonts/UniversLightNormalRegular.svg"
+							]
+						}
+					],
+					"fontFamily": "\"Univers\", sans serif",
+					"name": "Univers",
+					"slug": "Univers"
+				},
+                {
+					"fontFace": [
+						{
+							"fontFamily": "Minion",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/MinionProRegular.eot",
+								"file:./assets/fonts/MinionProRegular.woff",
+								"file:./assets/fonts/MinionProRegular.woff2",
+								"file:./assets/fonts/MinionProRegular.ttf",
+								"file:./assets/fonts/MinionProRegular.svg"
+							]
+						}
+					],
+					"fontFamily": "\"Minion\", sans serif",
+					"name": "Minion",
+					"slug": "Minion"
+				}
+			],
+			"fontSizes": [
+                {
+					"fluid": false,
+					"size": "16px",
+					"slug": "fs-16"
+				},
+                {
+					"fluid": false,
+					"size": "20px",
+					"slug": "fs-20"
+				},
+                {
+					"fluid": false,
+					"size": "24px",
+					"slug": "fs-24"
+				}
+			]
+		}
+	}
+}
