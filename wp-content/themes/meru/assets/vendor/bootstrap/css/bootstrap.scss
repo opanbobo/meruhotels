@@ -6232,7 +6232,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	display: table-cell!important;
 }
 
-.d-flex {
+.d-flex#{$additional-selector} {
 	display: -webkit-box!important;
 	display: -ms-flexbox!important;
 	display: flex!important;
@@ -6273,7 +6273,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		display: table-cell!important;
 	}
 
-	.d-sm-flex {
+	.d-sm-flex#{$additional-selector} {
 		display: -webkit-box!important;
 		display: -ms-flexbox!important;
 		display: flex!important;
@@ -6315,7 +6315,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		display: table-cell!important;
 	}
 
-	.d-md-flex {
+	.d-md-flex#{$additional-selector} {
 		display: -webkit-box!important;
 		display: -ms-flexbox!important;
 		display: flex!important;
@@ -6357,7 +6357,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		display: table-cell!important;
 	}
 
-	.d-lg-flex {
+	.d-lg-flex#{$additional-selector} {
 		display: -webkit-box!important;
 		display: -ms-flexbox!important;
 		display: flex!important;
@@ -6399,7 +6399,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		display: table-cell!important;
 	}
 
-	.d-xl-flex {
+	.d-xl-flex#{$additional-selector} {
 		display: -webkit-box!important;
 		display: -ms-flexbox!important;
 		display: flex!important;
@@ -6536,31 +6536,31 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	flex-wrap: wrap-reverse!important;
 }
 
-.justify-content-start {
+.justify-content-start#{$additional-selector} {
 	-webkit-box-pack: start!important;
 	-ms-flex-pack: start!important;
 	justify-content: flex-start!important;
 }
 
-.justify-content-end {
+.justify-content-end#{$additional-selector} {
 	-webkit-box-pack: end!important;
 	-ms-flex-pack: end!important;
 	justify-content: flex-end!important;
 }
 
-.justify-content-center {
+.justify-content-center#{$additional-selector} {
 	-webkit-box-pack: center!important;
 	-ms-flex-pack: center!important;
 	justify-content: center!important;
 }
 
-.justify-content-between {
+.justify-content-between#{$additional-selector} {
 	-webkit-box-pack: justify!important;
 	-ms-flex-pack: justify!important;
 	justify-content: space-between!important;
 }
 
-.justify-content-around {
+.justify-content-around#{$additional-selector} {
 	-ms-flex-pack: distribute!important;
 	justify-content: space-around!important;
 }
@@ -6699,31 +6699,31 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		flex-wrap: wrap-reverse!important;
 	}
 
-	.justify-content-sm-start {
+	.justify-content-sm-start#{$additional-selector} {
 		-webkit-box-pack: start!important;
 		-ms-flex-pack: start!important;
 		justify-content: flex-start!important;
 	}
 
-	.justify-content-sm-end {
+	.justify-content-sm-end#{$additional-selector} {
 		-webkit-box-pack: end!important;
 		-ms-flex-pack: end!important;
 		justify-content: flex-end!important;
 	}
 
-	.justify-content-sm-center {
+	.justify-content-sm-center#{$additional-selector} {
 		-webkit-box-pack: center!important;
 		-ms-flex-pack: center!important;
 		justify-content: center!important;
 	}
 
-	.justify-content-sm-between {
+	.justify-content-sm-between#{$additional-selector} {
 		-webkit-box-pack: justify!important;
 		-ms-flex-pack: justify!important;
 		justify-content: space-between!important;
 	}
 
-	.justify-content-sm-around {
+	.justify-content-sm-around#{$additional-selector} {
 		-ms-flex-pack: distribute!important;
 		justify-content: space-around!important;
 	}
@@ -6863,31 +6863,31 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		flex-wrap: wrap-reverse!important;
 	}
 
-	.justify-content-md-start {
+	.justify-content-md-start#{$additional-selector} {
 		-webkit-box-pack: start!important;
 		-ms-flex-pack: start!important;
 		justify-content: flex-start!important;
 	}
 
-	.justify-content-md-end {
+	.justify-content-md-end#{$additional-selector} {
 		-webkit-box-pack: end!important;
 		-ms-flex-pack: end!important;
 		justify-content: flex-end!important;
 	}
 
-	.justify-content-md-center {
+	.justify-content-md-center#{$additional-selector} {
 		-webkit-box-pack: center!important;
 		-ms-flex-pack: center!important;
 		justify-content: center!important;
 	}
 
-	.justify-content-md-between {
+	.justify-content-md-between#{$additional-selector} {
 		-webkit-box-pack: justify!important;
 		-ms-flex-pack: justify!important;
 		justify-content: space-between!important;
 	}
 
-	.justify-content-md-around {
+	.justify-content-md-around#{$additional-selector} {
 		-ms-flex-pack: distribute!important;
 		justify-content: space-around!important;
 	}
@@ -7027,31 +7027,31 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		flex-wrap: wrap-reverse!important;
 	}
 
-	.justify-content-lg-start {
+	.justify-content-lg-start#{$additional-selector} {
 		-webkit-box-pack: start!important;
 		-ms-flex-pack: start!important;
 		justify-content: flex-start!important;
 	}
 
-	.justify-content-lg-end {
+	.justify-content-lg-end#{$additional-selector} {
 		-webkit-box-pack: end!important;
 		-ms-flex-pack: end!important;
 		justify-content: flex-end!important;
 	}
 
-	.justify-content-lg-center {
+	.justify-content-lg-center#{$additional-selector} {
 		-webkit-box-pack: center!important;
 		-ms-flex-pack: center!important;
 		justify-content: center!important;
 	}
 
-	.justify-content-lg-between {
+	.justify-content-lg-between#{$additional-selector} {
 		-webkit-box-pack: justify!important;
 		-ms-flex-pack: justify!important;
 		justify-content: space-between!important;
 	}
 
-	.justify-content-lg-around {
+	.justify-content-lg-around#{$additional-selector} {
 		-ms-flex-pack: distribute!important;
 		justify-content: space-around!important;
 	}
@@ -7191,31 +7191,31 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 		flex-wrap: wrap-reverse!important;
 	}
 
-	.justify-content-xl-start {
+	.justify-content-xl-start#{$additional-selector} {
 		-webkit-box-pack: start!important;
 		-ms-flex-pack: start!important;
 		justify-content: flex-start!important;
 	}
 
-	.justify-content-xl-end {
+	.justify-content-xl-end#{$additional-selector} {
 		-webkit-box-pack: end!important;
 		-ms-flex-pack: end!important;
 		justify-content: flex-end!important;
 	}
 
-	.justify-content-xl-center {
+	.justify-content-xl-center#{$additional-selector} {
 		-webkit-box-pack: center!important;
 		-ms-flex-pack: center!important;
 		justify-content: center!important;
 	}
 
-	.justify-content-xl-between {
+	.justify-content-xl-between#{$additional-selector} {
 		-webkit-box-pack: justify!important;
 		-ms-flex-pack: justify!important;
 		justify-content: space-between!important;
 	}
 
-	.justify-content-xl-around {
+	.justify-content-xl-around#{$additional-selector} {
 		-ms-flex-pack: distribute!important;
 		justify-content: space-around!important;
 	}
