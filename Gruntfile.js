@@ -153,6 +153,12 @@ module.exports = function(grunt) {
         'copy:preUpload',
     ]);
 
+    grunt.registerTask('all', [
+        'jsVendor',
+        'jsMain',
+        'cssMain',
+    ]);
+
     grunt.registerTask('default', [
         'browserSync',
         'watch',
