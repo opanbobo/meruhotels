@@ -3,6 +3,18 @@
   margin: 0;
 }
 // @import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
+@font-face {
+  font-family: 'Univers Black';
+  src: url('../fonts/Univers-Black.eot');
+  src: url('../fonts/Univers-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Univers-Black.woff2') format('woff2'),
+      url('../fonts/Univers-Black.woff') format('woff'),
+      url('../fonts/Univers-Black.ttf') format('truetype'),
+      url('../fonts/Univers-Black.svg#Univers-Black') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
 
 
 // general
@@ -230,14 +242,58 @@ header.wp-block-template-part {
 /// home
 ///////////////
 .home{
-  .section-overlay-page{
-    min-height: 730px;
-    @media screen and (max-width:768px) {
-      min-height: 764px;
+
+  .two-column-no-container{
+    &:hover{
+      .desc-overlay-img{
+        height: auto;
+      }
     }
-    .wp-block-cover__background{
-      background-color: #0F2335;
-      opacity: .7;
+    .desc-overlay-img{
+      @media (min-width: 1200px) {
+        width: 80%;
+        height: 100px;
+      }
+    }
+    
+  }
+
+  .bg-overlay-blue-wrapper{
+    // min-height: 644px;
+    @media screen and (max-width:768px) {
+      // min-height: 764px;
+    }
+    
+    &:hover{
+      .bg-overlay-blue-blocks{
+        background: rgba(15, 35, 53, 0.7);
+        top: 0;
+      }
+      .desc-overlay-img{
+        height: auto;
+      }
+    }
+
+    .bg-overlay-blue-blocks{
+      // display: none;
+      background: rgb(15,35,53);
+      background: -moz-linear-gradient(0deg, rgba(15,35,53,1) 50%, rgba(0,189,194,0.021428639815301076) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(15,35,53,1) 50%, rgba(0,189,194,0.021428639815301076) 100%);
+      background: linear-gradient(0deg, rgba(15,35,53,1) 50%, rgba(0,189,194,0.021428639815301076) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f2335",endColorstr="#00bdc2",GradientType=1);
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transition: top 0.5s ease, background 0.5s ease; /* Tambahkan transisi untuk efek slide */
+      @media (min-width: 1200px) {
+        top: 57%;
+      }
     }
   }
   .title-overlay-img{
@@ -251,12 +307,13 @@ header.wp-block-template-part {
 
   .desc-overlay-img{
     font-size: 18px;
+    padding-bottom: 40px;
     @media screen and (max-width:768px) {
       font-size: 16px !important;
     }
     @media (min-width: 1200px) {
       width: 742px;
-      margin: auto;
+      height: 125px;
     }
   }
   .btn-overlay-img{
