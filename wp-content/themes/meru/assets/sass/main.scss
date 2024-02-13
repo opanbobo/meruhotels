@@ -242,8 +242,23 @@ header.wp-block-template-part {
 /// home
 ///////////////
 .home{
+
+  .two-column-no-container{
+    &:hover{
+      .desc-overlay-img{
+        height: auto;
+      }
+    }
+    .desc-overlay-img{
+      @media (min-width: 1200px) {
+        width: 80%;
+        height: 100px;
+      }
+    }
+  }
+
   .bg-overlay-blue-wrapper{
-    // min-height: 730px;
+    // min-height: 644px;
     @media screen and (max-width:768px) {
       // min-height: 764px;
     }
@@ -253,25 +268,31 @@ header.wp-block-template-part {
         background: rgba(15, 35, 53, 0.7);
         top: 0;
       }
+      .desc-overlay-img{
+        height: auto;
+      }
     }
 
     .bg-overlay-blue-blocks{
       // display: none;
       background: rgb(15,35,53);
-      background: -moz-linear-gradient(0deg, rgba(15,35,53,1) 30%, rgba(0,189,194,0.021428639815301076) 100%);
-      background: -webkit-linear-gradient(0deg, rgba(15,35,53,1) 30%, rgba(0,189,194,0.021428639815301076) 100%);
-      background: linear-gradient(0deg, rgba(15,35,53,1) 30%, rgba(0,189,194,0.021428639815301076) 100%);
+      background: -moz-linear-gradient(0deg, rgba(15,35,53,1) 50%, rgba(0,189,194,0.021428639815301076) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(15,35,53,1) 50%, rgba(0,189,194,0.021428639815301076) 100%);
+      background: linear-gradient(0deg, rgba(15,35,53,1) 50%, rgba(0,189,194,0.021428639815301076) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f2335",endColorstr="#00bdc2",GradientType=1);
       position: absolute;
       width: 100%;
       left: 0;
       right: 0;
-      top: 60%;
+      top: 0;
       height: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
       transition: top 0.5s ease, background 0.5s ease; /* Tambahkan transisi untuk efek slide */
+      @media (min-width: 1200px) {
+        top: 57%;
+      }
     }
   }
   .title-overlay-img{
@@ -291,6 +312,7 @@ header.wp-block-template-part {
     }
     @media (min-width: 1200px) {
       width: 742px;
+      height: 125px;
     }
   }
   .btn-overlay-img{
