@@ -216,6 +216,11 @@ header.wp-block-template-part {
   border-color: #C36110;
   font-size: 32px;
   font-weight: 400;
+  &:hover{
+    color: #fff;
+    background-color: #C36110;
+    border-color: #C36110;
+  }
 }
 
 .title-overlay-top-section{
