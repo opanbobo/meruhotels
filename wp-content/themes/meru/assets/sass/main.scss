@@ -3,18 +3,6 @@
   margin: 0;
 }
 // @import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
-@font-face {
-  font-family: 'Univers Black';
-  src: url('../fonts/Univers-Black.eot');
-  src: url('../fonts/Univers-Black.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Univers-Black.woff2') format('woff2'),
-      url('../fonts/Univers-Black.woff') format('woff'),
-      url('../fonts/Univers-Black.ttf') format('truetype'),
-      url('../fonts/Univers-Black.svg#Univers-Black') format('svg');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
 
 
 // general
@@ -145,7 +133,7 @@ header.wp-block-template-part {
 }
 
 .universe-28{
-  font-family: 'Univers LT Std', sans-serif;
+  font-family: 'Univers', sans-serif;
   font-size: 20px;
   font-weight: 700;
   @media screen and (max-width:768px) {
@@ -154,7 +142,7 @@ header.wp-block-template-part {
 }
 
 .universe-20{
-  font-family: 'Univers LT Std', sans-serif;
+  font-family: 'Univers', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.85;
@@ -165,7 +153,7 @@ header.wp-block-template-part {
 }
 
 .universe-12{
-  // font-family: 'Univers LT Std', sans-serif;
+  // font-family: 'Univers', sans-serif;
   color: #4D4D4D;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -255,7 +243,7 @@ header.wp-block-template-part {
         height: 100px;
       }
     }
-    
+
   }
 
   .bg-overlay-blue-wrapper{
@@ -263,7 +251,7 @@ header.wp-block-template-part {
     @media screen and (max-width:768px) {
       // min-height: 764px;
     }
-    
+
     &:hover{
       .bg-overlay-blue-blocks{
         background: rgba(15, 35, 53, 0.7);

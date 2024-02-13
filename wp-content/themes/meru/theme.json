@@ -86,6 +86,20 @@
 								"file:./assets/fonts/UniversLightNormalRegular.ttf",
 								"file:./assets/fonts/UniversLightNormalRegular.svg"
 							]
+						},
+                        {
+							"fontFamily": "Univers",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/Univers-Black.eot",
+								"file:./assets/fonts/Univers-Black.woff",
+								"file:./assets/fonts/Univers-Black.woff2",
+								"file:./assets/fonts/Univers-Black.ttf",
+								"file:./assets/fonts/Univers-Black.svg"
+							]
 						}
 					],
 					"fontFamily": "\"Univers\", sans serif",
