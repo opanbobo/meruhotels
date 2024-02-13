@@ -111,6 +111,20 @@ function rk_post_template_structure_update( $block_content, $block ) {
             ['rl-is-layout-constrained'], $block_content);
     }
 
+    if ( 'wp-bootstrap-blocks/button' == $block['blockName'] ) {
+        $pattern = '/<a([^>]*)>(.*?)<\/a>/si';
+
+        preg_match($pattern, $block_content, $matches);
+
+        if (count($matches) > 0) {
+            $open = '<a' . $matches[1] . '>';
+            $close = '</a>';
+            $text = trim($matches[2]);
+
+            $block_content = $open . '<span>' . $text . '</span>' . $close;
+        }
+    }
+
 	return $block_content;
 }
 add_filter( 'render_block', 'rk_post_template_structure_update', 10, 2 );
