@@ -59,6 +59,7 @@ function rk_room( $atts, $content = null ) {
     $output .= '<div class="rk-room-text">';
     $output .= '<h2 class="rk-room-title">'. $content[$atts['id']]['title'] .'</h2>';
     $output .= '<p>'. $content[$atts['id']]['content'] .'</p>';
+    $output .= '<a class="btn btn-primary" href="#">Discover '. $content[$atts['id']]['title'] .'</a>';
     $output .= '</div>';
     $output .= '</div>';
 
