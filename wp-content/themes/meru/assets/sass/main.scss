@@ -227,6 +227,22 @@ header.wp-block-template-part {
 }
 
 
+.rk-breadcrumb {
+  padding: 60px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #4D4D4D;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #4D4D4D;
+  }
+}
+
+
 /// home
 ///////////////
 .home{
