@@ -26,6 +26,13 @@ jQuery(document).ready(function($) {
         draggable: false,
     });
 
+    $('.home-sliders-1').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        draggable: true,
+    });
+
     $('.rk-room').each(function(i, el){
         var $el = $(el);
 
