@@ -259,7 +259,7 @@ header.wp-block-template-part {
   transition: background 0.3s ease;
   position: relative;
   overflow: hidden;
-  
+
   &::before {
     position: absolute;
     content: "";
@@ -324,7 +324,7 @@ header.wp-block-template-part {
   }
 
   .two-column-no-container{
-    &:hover{
+    & .bg-overlay-blue-wrapper:hover{
       .desc-overlay-img{
         height: auto;
       }
@@ -372,7 +372,7 @@ header.wp-block-template-part {
       flex-direction: column;
       transition: top 0.5s ease, background 0.5s ease; /* Tambahkan transisi untuk efek slide */
       @media (min-width: 1200px) {
-        top: 57%;
+        top: 61%;
       }
     }
   }
