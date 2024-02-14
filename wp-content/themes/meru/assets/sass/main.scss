@@ -294,6 +294,44 @@ header.wp-block-template-part {
 ///////////////
 .home{
 
+  .home-column-sliders-block{
+    background: #F0EEDC;
+    .home-column-sliders-detail{
+      .wp-block-media-text__content{
+        // align-self: flex-start;
+        color: #898F93;
+        .category-slides{
+          font-size: 24px;
+        }
+        .title-slides{
+          font-size: 48px;
+          font-family: 'Voyage';
+          color: #0F2335;
+          line-height: 57px;
+        }
+        p{
+          font-size: 18px;
+          line-height: 30px;
+        }
+        .btn-slides{
+          font-size: 24px;
+          background: linear-gradient(45deg, #DC7C47, #A04B1F, #8A471A);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          border: none;
+          outline: none;
+          font-family: 'Minion';
+          span{
+            padding-right: 20px;
+            background-size: contain;
+            background: url(../img/arrow-list.png) no-repeat right;
+
+          }
+        }
+      }
+    }
+  }
+
   .home-journey-wrapper{
     background: #F0EEDC;
     position: relative;
