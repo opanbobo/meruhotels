@@ -20,7 +20,7 @@ figure{
   flex-grow: 0 !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .container {
     max-width: 1400px;
   }
@@ -843,11 +843,13 @@ header.wp-block-template-part {
   text-transform: uppercase;
 }
 
-.row-cols-8>* {
-  flex: 0 0 auto;
-  width: 12.5%;
-}
+@media (min-width: 1200px) {
+  .row-cols-xxl-8>* {
+    flex: 0 0 auto;
+    width: 12.5%;
+  }
 
-.row-cols-8>.col-2 {
-  width: 25%;
+  .row-cols-xxl-8>.rk-col-2 {
+    width: 25%;
+  }
 }
