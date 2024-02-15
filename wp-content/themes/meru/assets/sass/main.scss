@@ -363,9 +363,7 @@ header.wp-block-template-part {
 
   .two-column-no-container{
     .bg-overlay-blue-wrapper .bg-overlay-blue-blocks {
-      @media (min-width: 1200px) {
         top: 85%;
-      }
     }
     .desc-overlay-img{
       @media (min-width: 1200px) {
@@ -412,10 +410,8 @@ header.wp-block-template-part {
       justify-content: center;
       flex-direction: column;
       transition: all 0.3s ease;
-      @media (min-width: 1200px) {
-        top: 89%;
-        transform: translateY(0%);
-      }
+      top: 89%;
+      transform: translateY(0%);
     }
   }
   .title-overlay-img{
@@ -430,6 +426,7 @@ header.wp-block-template-part {
   .desc-overlay-img{
     font-size: 18px;
     padding-bottom: 40px;
+    width: 80%;
     @media screen and (max-width:768px) {
       font-size: 16px !important;
     }
