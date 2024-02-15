@@ -620,6 +620,15 @@ header.wp-block-template-part {
 
 /// wellness
 ///////////////
+.wellness-two-column-wrapper{
+  .column-block{
+    p{
+      @media (min-width: 1200px) {
+        min-height: 110px;
+      }
+    }
+  }
+}
 .spa-column-wrapper{
   @media (min-width: 1200px) {
     margin-right: -10%;
