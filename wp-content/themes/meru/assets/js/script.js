@@ -31,6 +31,41 @@ jQuery(document).ready(function($) {
         dots: false,
         arrows: true,
         draggable: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
+    });
+
+    $('.center-mode-slider').slick({
+        centerMode: true,
+        centerPadding: '20px',
+        slidesToShow: 3,
+        dots: true,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
     });
 
     $('.rk-room').each(function(i, el){
