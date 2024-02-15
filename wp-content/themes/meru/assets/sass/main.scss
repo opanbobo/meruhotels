@@ -816,7 +816,7 @@ header.wp-block-template-part {
 }
 
 .rk-nav-footer {
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 
   .wp-block-navigation__container {
     justify-content: center;
@@ -824,5 +824,30 @@ header.wp-block-template-part {
 
   .wp-block-navigation-item__content {
     text-transform: uppercase;
+    font-size: 20px;
   }
+}
+
+.rk-nav-service {
+
+  .wp-block-navigation__container {
+    display: block;
+  }
+}
+
+.rk-fs-20 {
+  font-size: 20px;
+}
+
+.rk-tt-uc {
+  text-transform: uppercase;
+}
+
+.row-cols-8>* {
+  flex: 0 0 auto;
+  width: 12.5%;
+}
+
+.row-cols-8>.col-2 {
+  width: 25%;
 }
