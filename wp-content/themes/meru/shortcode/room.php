@@ -13,7 +13,7 @@ function rk_room( $atts, $content = null ) {
     $content = [
         [
             'title' => 'Deluxe Suite',
-            'content' => 'Experience the luxury of our Deluxe Suite, a spacious 83-square-meter retreat features a private balcony or expansive terrace overlooking our serene garden.',
+            'content' => 'Experience the luxury of our Deluxe Suite, a spacious 83-square-meter retreat features a private balcony or expansive terrace overlooking our serene Sanur beach or tropical garden.',
         ],
         [
             'title' => 'Corner Suite',
@@ -25,7 +25,7 @@ function rk_room( $atts, $content = null ) {
         ],
         [
             'title' => 'Meru Suite',
-            'content' => 'An expansive comfort of our Meru Suite, featuring a separate living room with a terrace or balcony overlooking the tranquil garden. With a generous 160 square meters of space, this suite offers an exceptional living experience.',
+            'content' => 'An expansive comfort of our Meru Suite, featuring a separate living room with a terrace or balcony overlooking the tranquil Sanur Beach and garden. With a generous 160 square meters of space, this suite offers an exceptional living experience.',
         ],
         [
             'title' => 'Presidential Suite',
