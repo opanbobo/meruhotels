@@ -726,8 +726,11 @@ header.wp-block-template-part {
     font-size: 12px;
     padding: 40px 40px 0;
   }
-  p{
+  .desc{
     line-height: 29px;
+    @media screen and (min-width:1200px) {
+      min-height: 120px;
+    }
   }
 }
 
@@ -764,6 +767,9 @@ header.wp-block-template-part {
 
   .rk-room-text {
     width: 960px;
+    .desc{
+      min-height: auto;
+    }
   }
 }
 
