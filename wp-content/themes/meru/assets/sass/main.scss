@@ -279,7 +279,7 @@ header.wp-block-template-part {
 
   @media screen and (max-width:768px) {
     display: inline-block;
-    margin-top: -15px;
+    // margin-top: -15px;
   }
 
   &:hover{
@@ -713,15 +713,24 @@ header.wp-block-template-part {
   line-height: 23px;
   letter-spacing: 1.3px;
   @media screen and (max-width:768px) {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 40px 40px 0;
+  }
+  p{
+    line-height: 29px;
   }
 }
 
 .rk-room-title {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 32px;
   font-family: 'Voyage';
+  margin-bottom: 20px;
+  @media screen and (max-width:768px) {
+    font-size: 24px;
+  }
 }
+
 
 .rk-room-4 {
   .rk-room-content {
@@ -729,14 +738,14 @@ header.wp-block-template-part {
     display: flex;
     justify-content: center;
     text-align: center;
-    @media screen and (max-width:768px) {
-      text-align: left;
-      justify-content: left;
-    }
+    // @media screen and (max-width:768px) {
+    //   text-align: left;
+    //   justify-content: left;
+    // }
   }
 
   .rk-room-text {
-    width: 580px;
+    width: 960px;
   }
 }
 
