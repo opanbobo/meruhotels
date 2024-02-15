@@ -145,7 +145,8 @@ header.wp-block-template-part {
 
 .universe-20{
   font-family: 'Univers', sans-serif;
-  font-size: 16px;
+  // font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.85;
   color: #4d4d4d;
@@ -235,7 +236,7 @@ header.wp-block-template-part {
 
 
 .rk-breadcrumb {
-  padding: 60px 0;
+  padding: 60px 15px;
   text-transform: uppercase;
   font-size: 14px;
   color: #4D4D4D;
@@ -722,8 +723,16 @@ header.wp-block-template-part {
 }
 
 .rk-room-title {
-  text-transform: uppercase;
   font-size: 32px;
+  font-family: 'Voyage';
+  margin-bottom: 20px;
+  @media screen and (max-width:768px) {
+    font-size: 24px;
+  }
+}
+
+.rk-room-title-2 {
+  font-size: 48px;
   font-family: 'Voyage';
   margin-bottom: 20px;
   @media screen and (max-width:768px) {
