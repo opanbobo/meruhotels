@@ -652,6 +652,34 @@ header.wp-block-template-part {
 }
 
 
+/// tnc, policy
+//////////////////
+.privacy-policy{
+  background: #F0EEDC;
+  header{
+    margin-bottom: 0 !important;
+    color: #0F2335;
+    @media screen and (max-width:768px){
+      padding-top: 115px;
+      padding-bottom: 80px;
+    }
+    .wp-block-navigation__responsive-container-open{
+      background: url(../img/burger-black.svg) center center no-repeat;
+    }
+    .header-logo{
+      @media screen and (max-width:768px) {
+        left: 53%;
+      }
+    }
+    .btn-top-header{
+      border-color: #0F2335 !important;
+      color: #0F2335 !important;
+    }
+  }
+}
+
+
+
 /// wellness
 ///////////////
 .wellness-two-column-wrapper{
