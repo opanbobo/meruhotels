@@ -653,7 +653,7 @@ header.wp-block-template-part {
 
 
 /// about us
-////////////// 
+//////////////
 .journey-wrapper{
   background: #F0EEDC;
   position: relative;
@@ -720,6 +720,27 @@ header.wp-block-template-part {
   }
 }
 
+
+.page-template-page-no-container-hero {
+  background: #F0EEDC;
+}
+
+.page-template-page-no-container-hero header.wp-block-template-part {
+  margin-bottom: 0;
+}
+
+.page-template-page-no-container-hero .rk-nav-header .wp-block-navigation__responsive-container-open {
+  background: url(../img/burger-black.svg) center center no-repeat;
+}
+
+.page-template-page-no-container-hero .btn-top-header {
+  border-color: #0F2335 !important;
+  color: #0F2335 !important;
+}
+
+.page-template-page-no-container-hero p {
+  font-size: 18px;
+}
 
 
 /// wellness
