@@ -652,6 +652,45 @@ header.wp-block-template-part {
 }
 
 
+/// about us
+////////////// 
+.journey-wrapper{
+  background: #F0EEDC;
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: '';
+    background: url(../img/bg-journey-left.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  &::after{
+    content: '';
+    background: url(../img/bg-journey-right.png) no-repeat right;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .home-journey-column{
+    z-index: 1;
+    .title-block{
+      font-family: 'Voyage';
+      font-size: 36px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
 /// tnc, policy
 //////////////////
 .privacy-policy{

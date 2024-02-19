@@ -26,6 +26,14 @@ jQuery(document).ready(function($) {
         draggable: false,
     });
 
+    $('.about-slider').slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+        autoplay:true,
+        autoplaySpeed: 1500
+    });
+
     $('.home-sliders-1').slick({
         slidesToShow: 1,
         dots: false,
