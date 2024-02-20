@@ -225,7 +225,7 @@ header.wp-block-template-part {
 }
 
 .btn-outline-primary{
-  font-family: 'Minion';
+  font-family: 'Voyage';
   color: #C36110;
   border-color: #C36110;
   font-size: 26px;
@@ -578,7 +578,9 @@ header.wp-block-template-part {
         font-family: 'Voyage';
         font-size: 30px;
         padding: 10px 0;
-        margin-top: 0 !important;
+        @media screen and (max-width:768px) {
+          margin-top: 0 !important;
+        }
       }
       p{
         font-size: 16px;
@@ -1199,8 +1201,8 @@ header.wp-block-template-part {
         }
       }
       .title-col-large{
-        font-size: 22px;
-        font-family: 'Minion';
+        font-size: 25px;
+        font-family: 'Voyage';
       }
     }
   }
@@ -1215,7 +1217,7 @@ header.wp-block-template-part {
 
   .wp-block-navigation-item__content {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -1227,7 +1229,7 @@ header.wp-block-template-part {
 }
 
 .rk-fs-20 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .rk-tt-uc {
