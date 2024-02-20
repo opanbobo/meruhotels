@@ -136,7 +136,7 @@ header.wp-block-template-part {
 
 .universe-28{
   font-family: 'Univers', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   @media screen and (max-width:768px) {
     font-size: 16px;
@@ -146,12 +146,20 @@ header.wp-block-template-part {
 .universe-20{
   font-family: 'Univers', sans-serif;
   // font-size: 16px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.85;
   color: #4d4d4d;
   @media screen and (max-width:768px) {
-    font-size: 20px;
+    font-size: 16px;
+  }
+}
+
+.wp-block-image.size-full{
+  img{
+    @media screen and (max-width:768px) {
+      height: auto !important;
+    }
   }
 }
 
@@ -189,22 +197,25 @@ header.wp-block-template-part {
 .title-section-page{
   // font-family: 'Minion';
   font-family: 'Voyage';
-  font-size: 48px;
+  font-size: 43px;
   color: #0F2335;
   @media screen and (max-width:768px) {
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 
 .subtitle-section-page-top{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
+  @media screen and (max-width:768px) {
+    font-size: 16px;
+  }
 }
 
 .subtitle-section-page{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
@@ -217,8 +228,11 @@ header.wp-block-template-part {
   font-family: 'Minion';
   color: #C36110;
   border-color: #C36110;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 400;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+  }
   &:hover{
     color: #fff;
     background-color: #C36110;
@@ -377,14 +391,14 @@ header.wp-block-template-part {
     .column-slides-center-block{
       .title-slides{
         font-family: 'Voyage';
-        font-size: 36px;
+        font-size: 30px;
       }
       .desc-slides{
-        font-size: 18px;
+        font-size: 16px;
       }
       .btn-slides{
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
         background: linear-gradient(45deg, #DC7C47, #A04B1F, #8A471A);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -407,6 +421,9 @@ header.wp-block-template-part {
             width: 100%;
             object-fit: cover;
           }
+        }
+        .title-slides{
+          font-size: 24px;
         }
         .desc-slides{
           display: none;
@@ -463,28 +480,41 @@ header.wp-block-template-part {
     .home-column-sliders-detail{
       .wp-block-media-text__content{
         // align-self: flex-start;
+        @media screen and (max-width:768px) {
+          padding: 20px;
+        }
         color: #898F93;
         .category-slides{
           font-size: 24px;
+          @media screen and (max-width:768px) {
+            font-size: 18px;
+            margin-bottom: 0;
+          }
         }
         .title-slides{
-          font-size: 48px;
+          font-size: 35px;
           font-family: 'Voyage';
           color: #0F2335;
-          line-height: 57px;
+          line-height: 42px;
+          @media screen and (max-width:768px) {
+            font-size: 30px;
+          }
         }
         p{
-          font-size: 18px;
-          line-height: 30px;
+          @media screen and (min-width:1200px) {
+            line-height: 30px;
+          }
         }
         .btn-slides{
-          font-size: 24px;
+          font-size: 20px;
           background: linear-gradient(45deg, #DC7C47, #A04B1F, #8A471A);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           border: none;
           outline: none;
           font-family: 'Minion';
+          margin-top: 20px;
+          display: inline-block;
           span{
             padding-right: 20px;
             background-size: contain;
@@ -524,10 +554,14 @@ header.wp-block-template-part {
       z-index: 1;
       .title-block{
         font-family: 'Voyage';
-        font-size: 36px;
+        font-size: 30px;
+        @media screen and (max-width:768px) {
+          padding: 10px 0;
+          margin: 0;
+        }
       }
       p{
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
@@ -535,6 +569,9 @@ header.wp-block-template-part {
   .two-column-no-container{
     .bg-overlay-blue-wrapper .bg-overlay-blue-blocks {
         top: 85%;
+        @media screen and (max-width:768px) {
+          top: 20%;
+        }
     }
     .desc-overlay-img{
       @media (min-width: 1200px) {
@@ -554,11 +591,17 @@ header.wp-block-template-part {
       background: linear-gradient(180deg, rgba(0,189,194,0) 0px, rgba(15,35,53,0.85) 17%, rgba(15,35,53,0.85) 100%);
       transition: all 0.3s ease;
       opacity: 1;
+      @media screen and (max-width:768px) {
+        top: 0;
+      }
     }
     &:hover{
       .bg-cover-img::after {
         top: -50%;
         opacity: 0.8;
+        @media screen and (max-width:768px) {
+          opacity: 0.8;
+        }
       }
       .bg-overlay-blue-blocks{
         top: 50%;
@@ -583,19 +626,22 @@ header.wp-block-template-part {
       transition: all 0.3s ease;
       top: 89%;
       transform: translateY(0%);
+      @media screen and (max-width:769px) {
+        top: 29%;
+      }
     }
   }
   .title-overlay-img{
     font-family: 'Voyage';
-    font-size: 48px !important;
+    font-size: 43px !important;
     margin-bottom: 16px;
     @media screen and (max-width:768px) {
-      font-size: 42px !important;
+      font-size: 38px !important;
     }
   }
 
   .desc-overlay-img{
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 40px;
     width: 80%;
     @media screen and (max-width:768px) {
@@ -716,10 +762,10 @@ header.wp-block-template-part {
     z-index: 1;
     .title-block{
       font-family: 'Voyage';
-      font-size: 36px;
+      font-size: 30px;
     }
     p{
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 }
@@ -902,7 +948,7 @@ header.wp-block-template-part {
 }
 
 .rk-room-title-2 {
-  font-size: 48px;
+  font-size: 43px;
   font-family: 'Voyage';
   margin-bottom: 20px;
   @media screen and (max-width:768px) {

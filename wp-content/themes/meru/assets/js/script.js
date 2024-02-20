@@ -60,8 +60,10 @@ jQuery(document).ready(function($) {
             settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
+                centerPadding: '10px',
+                autoplaySpeed: 3500,
+                autoplay:true,
+                slidesToShow: 1
             }
             },
             {
@@ -69,7 +71,9 @@ jQuery(document).ready(function($) {
             settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '10px',
+                autoplaySpeed: 3500,
+                autoplay:true,
                 slidesToShow: 1
             }
             }
