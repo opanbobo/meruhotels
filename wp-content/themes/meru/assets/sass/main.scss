@@ -391,6 +391,9 @@ header.wp-block-template-part {
           text-indent: -9999px;
           padding: 2px 50px;
           height: auto;
+          @media screen and (max-width:768px) {
+            padding: 2px 30px;
+          }
         }
       }
     }
