@@ -59,10 +59,11 @@ jQuery(document).ready(function($) {
             breakpoint: 768,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '10px',
+                // centerMode: true,
+                // centerPadding: '10px',
                 autoplaySpeed: 3500,
                 autoplay:true,
+                centerMode: false,
                 slidesToShow: 1
             }
             },
@@ -70,8 +71,9 @@ jQuery(document).ready(function($) {
             breakpoint: 480,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '10px',
+                // centerMode: true,
+                // centerPadding: '10px',
+                centerMode: false,
                 autoplaySpeed: 3500,
                 autoplay:true,
                 slidesToShow: 1
