@@ -494,12 +494,7 @@ header.wp-block-template-part {
         left: -8%;
       }
       &.slick-next{
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+        background: url(../img/btn-sliders-r.png) no-repeat;
         right: -8%;
       }
     }
@@ -1174,9 +1169,15 @@ header.wp-block-template-part {
 }
 
 .logo-bumn-bottom img{
-  position: relative;
-  top: 60px;
+  margin-top: 40px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    top: 20px;
+  }
+
 }
+
 .rk-social-media{
   display: flex;
   justify-content: end;
