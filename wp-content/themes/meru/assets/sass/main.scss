@@ -1165,10 +1165,10 @@ header.wp-block-template-part {
   }
   .subtitle{
     p{
-      font-size: 18px;
-      @media screen and (max-width:768px) {
-        font-size: 16px;
-      }
+      font-size: 15px;
+      // @media screen and (max-width:768px) {
+      //   font-size: 16px;
+      // }
     }
   }
   .after-form{
@@ -1192,6 +1192,11 @@ header.wp-block-template-part {
   .footer-menus-wrapper{
     @media screen and (max-width:768px) {
       padding-bottom: 0 !important;
+    }
+    .rk-nav-service{
+      .wp-block-navigation-item{
+        font-size: 15px;
+      }
     }
     .footer-menu-left{
       .footer-block{
@@ -1248,7 +1253,7 @@ header.wp-block-template-part {
 
   .wp-block-navigation-item__content {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -1260,7 +1265,7 @@ header.wp-block-template-part {
 }
 
 .rk-fs-20 {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .rk-tt-uc {
