@@ -804,7 +804,7 @@ header.wp-block-template-part {
 
 
 /// faq
-//////////// 
+////////////
 .page-template-page-faq{
   background: #F0EEDC;
   header{
@@ -1096,7 +1096,7 @@ header.wp-block-template-part {
 
 
 /// inquiries
-/////////////// 
+///////////////
 .contact-col{
   color: #4D4D4D;
   font-size: 20px;
@@ -1114,8 +1114,24 @@ header.wp-block-template-part {
 // footer
 //////////////
 .logo-meru-bottom img{
-  width: 70% !important;
+  width: 186px !important;
   margin-top: 10px;
+}
+
+.logo-bumn-bottom img{
+  position: relative;
+  top: 60px;
+}
+.rk-social-media{
+  display: flex;
+  justify-content: end;
+  li{
+    list-style: none;
+    padding-left: 10px;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
 }
 .footer-bottom-left{
   a{
@@ -1306,5 +1322,9 @@ header.wp-block-template-part {
 
   .row-cols-xxl-8>.rk-col-2 {
     width: 25%;
+  }
+
+  .row-cols-xxl-8>.rk-col-3 {
+    width: 37.5%;
   }
 }
