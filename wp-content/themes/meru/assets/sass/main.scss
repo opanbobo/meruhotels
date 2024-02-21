@@ -139,7 +139,7 @@ header.wp-block-template-part {
   font-size: 18px;
   font-weight: 700;
   @media screen and (max-width:768px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -152,6 +152,12 @@ header.wp-block-template-part {
   color: #4d4d4d;
   @media screen and (max-width:768px) {
     font-size: 16px;
+  }
+}
+
+.img-pola{
+  @media screen and (max-width:768px) {
+    padding-top: 0 !important;
   }
 }
 
@@ -201,6 +207,7 @@ header.wp-block-template-part {
   color: #0F2335;
   @media screen and (max-width:768px) {
     font-size: 38px;
+    line-height: 55px;
   }
 }
 
@@ -508,6 +515,7 @@ header.wp-block-template-part {
         color: #898F93;
         .category-slides{
           font-size: 24px;
+          margin-bottom: 0;
           @media screen and (max-width:768px) {
             font-size: 18px;
             margin-bottom: 0;
@@ -518,8 +526,10 @@ header.wp-block-template-part {
           font-family: 'Voyage';
           color: #0F2335;
           line-height: 42px;
+          margin-bottom: 30px;
           @media screen and (max-width:768px) {
             font-size: 30px;
+            margin-bottom: 0;
           }
         }
         p{
@@ -655,8 +665,8 @@ header.wp-block-template-part {
   }
   .title-overlay-img{
     font-family: 'Voyage';
-    font-size: 43px !important;
-    margin-bottom: 16px;
+    font-size: 38px !important;
+    margin-bottom: 13px;
     @media screen and (max-width:768px) {
       font-size: 38px !important;
     }
@@ -664,7 +674,7 @@ header.wp-block-template-part {
 
   .desc-overlay-img{
     font-size: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
     width: 80%;
     @media screen and (max-width:768px) {
       font-size: 16px !important;
