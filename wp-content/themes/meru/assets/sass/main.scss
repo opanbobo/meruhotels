@@ -1085,6 +1085,22 @@ header.wp-block-template-part {
 }
 
 
+/// inquiries
+/////////////// 
+.contact-col{
+  color: #4D4D4D;
+  font-size: 20px;
+  .title-contact-col{
+    font-family: 'Voyage';
+    font-size: 43px;
+  }
+}
+
+.wpcf7-spinner{
+  position: absolute;
+}
+
+
 // footer
 //////////////
 .logo-meru-bottom img{
