@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
     $('.home-sliders-1').slick({
         slidesToShow: 1,
         dots: false,
-        arrows: true,
+        arrows: false,
         draggable: true,
         responsive: [
             {

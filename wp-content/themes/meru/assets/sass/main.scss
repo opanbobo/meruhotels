@@ -885,9 +885,41 @@ header.wp-block-template-part {
 }
 
 
+.img-mobile-square{
+  img{
+    @media screen and (max-width:768px) {
+      height: 350px !important;
+      object-fit: cover;
+    }
+  }
+}
+
 /// wellness
 ///////////////
+.col-center-wellness{
+  .wp-block-image{
+    img{
+      @media screen and (max-width:768px) {
+        height: 350px !important;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.mobile-center{
+  @media screen and (max-width:768px) {
+    text-align: center;
+  }
+}
 .wellness-two-column-wrapper{
+  .wp-block-image{
+    img{
+      @media screen and (max-width:768px) {
+        height: 350px !important;
+        object-fit: cover;
+      }
+    }
+  }
   .column-block{
     p{
       @media (min-width: 1200px) {
@@ -979,6 +1011,15 @@ header.wp-block-template-part {
 
 .rk-room {
   margin-bottom: 60px;
+  @media screen and (max-width:768px) {
+    margin-bottom: 35px;
+  }
+}
+
+.btn-reserve-room{
+  @media screen and (max-width:768px) {
+    text-align: center;
+  }
 }
 
 .rk-room-content {
@@ -991,7 +1032,7 @@ header.wp-block-template-part {
   letter-spacing: 1.3px;
   @media screen and (max-width:768px) {
     font-size: 12px;
-    padding: 40px 40px 0;
+    padding: 20px 40px 0;
   }
   .desc{
     line-height: 29px;
@@ -1006,7 +1047,7 @@ header.wp-block-template-part {
   font-family: 'Voyage';
   margin-bottom: 20px;
   @media screen and (max-width:768px) {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
@@ -1021,6 +1062,19 @@ header.wp-block-template-part {
 
 
 .rk-room-4 {
+  @media screen and (max-width:768px) {
+    margin-bottom: 20px;
+  }
+  .rk-room-images{
+    .rk-room-image{
+      img{
+        @media screen and (max-width:768px) {
+          height: 350px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
   .rk-room-content {
     min-height: 191px;
     display: flex;
@@ -1030,6 +1084,7 @@ header.wp-block-template-part {
     //   text-align: left;
     //   justify-content: left;
     // }
+    
   }
 
   .rk-room-text {
