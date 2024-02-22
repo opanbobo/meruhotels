@@ -21,7 +21,7 @@ function rk_enqueue_styles() {
     wp_register_style( 'rk-slick-theme', get_stylesheet_directory_uri() . '/assets/vendor/slick/css/slick-theme.css', [], '0.0.1' );
 
     // Template Main CSS File
-    wp_register_style( 'rk-style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], '0.0.3' );
+    wp_register_style( 'rk-style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], '0.0.5' );
 
     wp_enqueue_style( 'rk-bootstrap' );
     wp_enqueue_style( 'rk-bootstrap-icons' );
