@@ -71,11 +71,15 @@ header.wp-block-template-part {
 }
 
 .header-logo {
-  position: absolute;
-  top: 127px;
+  position: absolute#{$additional-important};
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  @if ($additional-selector == '') {
+    top: 127px;
+  } @else {
+    top: 0px;
+  }
   @media screen and (max-width: 768px) {
     top: 57px;
   }
