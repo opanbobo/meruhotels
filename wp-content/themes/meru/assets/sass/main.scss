@@ -272,6 +272,7 @@ header.wp-block-template-part {
 }
 
 .btn-gold{
+  display: inline-block;
   background: #8A471A;
   color: #fff;
   padding: 10px 30px;
@@ -284,15 +285,17 @@ header.wp-block-template-part {
   position: relative;
   overflow: hidden;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    transition: all .35s;
-    background: linear-gradient(122deg, #DC7C47 24%, #A04B1F 58%, #8A471A 91%);
+  @if($additional-selector == '') {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      transition: all .35s;
+      background: linear-gradient(122deg, #DC7C47 24%, #A04B1F 58%, #8A471A 91%);
+    }
   }
 
   span {
@@ -1056,7 +1059,7 @@ header.wp-block-template-part {
 }
 
 
-.rk-room-4 {
+.rk-room-wide {
   @media screen and (max-width:768px) {
     margin-bottom: 20px;
   }

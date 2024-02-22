@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
         var $el = $(el);
 
         var lightboxDescription = GLightbox({
-            selector: '.rk-room-' + i + ' .rk-room-image-link',
+            selector: '.rk-room-' + $el.data('id') + ' .rk-room-image-link',
         });
     });
 

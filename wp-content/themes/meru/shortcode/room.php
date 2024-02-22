@@ -7,66 +7,93 @@ if ( ! defined( 'ABSPATH' ) ) {
 function rk_room( $atts, $content = null ) {
     $atts = shortcode_atts( [
 		'posts_per_page' => 8,
-        'id' => 0,
 	], $atts );
 
-    $content = [
-        [
-            'title' => 'Deluxe Suite',
-            'content' => 'Experience the luxury of our Deluxe Suite, a spacious 83-square-meter retreat features a private balcony or expansive terrace overlooking our serene Sanur beach or tropical garden.',
-        ],
-        [
-            'title' => 'Corner Suite',
-            'content' => 'Indulge in the expansive comfort of our Corner Suite, featuring serene garden views. Offering a spacious 98 square meters, this suite includes a private balcony or terrace and a dedicated dining table for your convenience.',
-        ],
-        [
-            'title' => 'Premier Suite',
-            'content' => 'Experience our Premier Suites, feature 125 square meters of space and a stunning view of our tranquil garden. Each suite is adorned with refined furnishings includes a private balcony or terrace, providing the ultimate of luxurious resort-style living.',
-        ],
-        [
-            'title' => 'Meru Suite',
-            'content' => 'An expansive comfort of our Meru Suite, featuring a separate living room with a terrace or balcony overlooking the tranquil Sanur Beach and garden. With a generous 160 square meters of space, this suite offers an exceptional living experience.',
-        ],
-        [
-            'title' => 'Presidential Suite',
-            'content' => 'Experience the epitome of luxury with our Presidential Suites, the most prestigious accommodation at the resort. These extensive 209 square meters, promises an extraordinary retreat, ensuring an unparalleled experience.',
-        ],
-    ];
+    $args = array(
+        'post_type' => 'suite',
+        'posts_per_page' => $atts['posts_per_page'],
+        'orderby' => 'menu_order',
+        'order' => 'asc',
+    );
 
-    $images = [
-        ['deluxe.jpg', 'corner.jpg', 'premier.jpg', 'meru.jpg'],
-        ['corner.jpg', 'premier.jpg', 'meru.jpg','deluxe.jpg'],
-        ['premier.jpg', 'meru.jpg','deluxe.jpg', 'corner.jpg'],
-        ['meru.jpg','deluxe.jpg', 'corner.jpg', 'premier.jpg'],
-        ['presidential.jpg','presidential.jpg','presidential.jpg','presidential.jpg']
-    ];
+    $custom_query = new WP_Query($args);
+
+    $output = '';
+
+    $output .= '<div class="row pb-5">';
+
+    if ($custom_query->have_posts()) {
+
+        while ($custom_query->have_posts()) {
+            $custom_query->the_post();
+
+            $wide = get_post_meta(get_the_ID(), 'wide', true);
+
+            $class = [];
+            $class[] = 'rk-room';
+            $class[] = 'rk-room-'. get_the_ID();
+
+            if ($wide) {
+                $output .= '<div class="col-md-12">';
+                $class[] = 'rk-room-wide';
+            } else {
+                $output .= '<div class="col-md-6">';
+            }
+
+            $class_string = implode(' ', $class);
+
+            $output .= '<div class="'. $class_string .'" data-id="'. get_the_ID() .'">';
+            $output .= '<div class="rk-room-images">';
+
+            $output .= get_image('image_1');
+            $output .= get_image('image_2');
+            $output .= get_image('image_3');
+            $output .= get_image('image_4');
+
+            $output .= '</div>'; // rk-room-images
+
+
+            $output .= '<div class="rk-room-content">';
+            $output .= '<div class="rk-room-text">';
+
+            $output .= '<h2 class="rk-room-title">'. get_the_title() .'</h2>';
+            $output .= '<p class="desc">'. get_the_excerpt() .'</p>';
+
+            $output .= '<p class="btn-reserve-room">';
+            $output .= '<a class="btn btn-gold" href="'. esc_url(get_post_meta(get_the_ID(), 'button_link', true)) .'"><span>'. esc_html(get_post_meta(get_the_ID(), 'button_text', true)) .'</span></a>';
+            $output .= '</p>';
 
 
 
-    $output  = '<div class="rk-room rk-room-'. $atts['id'] .'">';
-    $output .= '<div class="rk-room-images">';
+            $output .= '</div>'; // rk-room-text
+            $output .= '</div>'; // rk-room-content
 
+            $output .= '</div>'; // rk-room
 
-    foreach($images[$atts['id']] as $image) {
-        $output .= '<div class="rk-room-image">';
-        $output .= '<a class="rk-room-image-link" href="'. get_stylesheet_directory_uri() .'/assets/img/'. $image .'"><img class="img-fluid" src="'. get_stylesheet_directory_uri() .'/assets/img/'. $image .'" /></a>';
-        $output .= '</div>';
+            $output .= '</div>'; // col-md-6
+        }
     }
 
-    $output .= '</div>';
+    $output .= '</div>'; // row
 
-    $output .= '<div class="rk-room-content">';
-    $output .= '<div class="rk-room-text">';
-    $output .= '<h2 class="rk-room-title">'. $content[$atts['id']]['title'] .'</h2>';
-    $output .= '<p class="desc">'. $content[$atts['id']]['content'] .'</p><p class="btn-reserve-room">';
-    // $output .= '<a class="btn btn-gold" href="#"><span>Reserve '. $content[$atts['id']]['title'] .'</span></a>';
-    $output .= '<a class="btn btn-gold" href="https://staahmax.staah.net/be/index_be?propertyId=OTEzMQ==&individual=true"><span>Reserve </span></a></p>';
-    $output .= '</div>';
-    $output .= '</div>';
-
-
-    $output .= '</div>';
 
     return $output;
 }
 add_shortcode( 'rk_room', 'rk_room' );
+
+function get_image($field_name = 'image_1') {
+
+    $output = '';
+
+    $image_id = get_post_meta(get_the_ID(), $field_name, true);
+    $image_src = wp_get_attachment_image_src($image_id, 'full');
+    $thumb_src = wp_get_attachment_image_src($image_id, 'suite');
+
+    if (empty($image_src)) return;
+
+    $output .= '<div class="rk-room-image">';
+    $output .= '<a class="rk-room-image-link" href="'. esc_url($image_src[0]) .'"><img class="img-fluid" src="'. esc_url($thumb_src[0]) .'" /></a>';
+    $output .= '</div>'; // rk-room-image
+
+    return $output;
+}
