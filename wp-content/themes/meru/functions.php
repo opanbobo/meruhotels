@@ -51,25 +51,26 @@ function rk_add_editor_styles() {
 }
 add_action('init', 'rk_add_editor_styles');
 
-function rk_image_sizes() {
-    add_image_size('img-slider-bfb', 432, 202, true);
-
-    add_theme_support( 'post-thumbnails' );
-}
-add_action('after_setup_theme', 'rk_image_sizes');
-
 function custom_theme_menu_location() {
     register_nav_menu('menu_location', __('Menu Location', 'theme-textdomain'));
 }
 
 add_action('after_setup_theme', 'custom_theme_menu_location');
 
+function rk_image_sizes() {
+    add_image_size('img-slider-bfb', 432, 202, true);
+    add_image_size('suite', 681, 440, true);
+
+    add_theme_support( 'post-thumbnails' );
+}
+add_action('after_setup_theme', 'rk_image_sizes');
 
 function rk_image_size_names_choose() {
     return [
 		'thumbnail'      => __( 'Thumbnail', 'rk' ),
 		'medium'         => __( 'Medium', 'rk' ),
-		'img-slider-bfb' => __( 'Image Slider BFB', 'rk' ),
+		'img-slider-bfb' => __( 'Image Slider BFB 432x202', 'rk' ),
+		'suite'          => __( 'Suite 681x440', 'rk' ),
 		'large'          => __( 'Large', 'rk' ),
 		'full'           => __( 'Full Size', 'rk' ),
 	];
@@ -108,7 +109,7 @@ function rk_post_template_structure_update( $block_content, $block ) {
 
     if ( 'core/post-content' == $block['blockName'] && !is_single()) {
         $block_content = str_replace(['is-layout-constrained'],
-            ['rl-is-layout-constrained'], $block_content);
+            ['rk-is-layout-constrained'], $block_content);
     }
 
     if ( 'wp-bootstrap-blocks/button' == $block['blockName'] ) {
