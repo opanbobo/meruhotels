@@ -1079,7 +1079,7 @@ header.wp-block-template-part {
     //   text-align: left;
     //   justify-content: left;
     // }
-    
+
   }
 
   .rk-room-text {
@@ -1166,10 +1166,12 @@ header.wp-block-template-part {
 .logo-meru-bottom img{
   width: 186px !important;
   margin-top: 10px;
+  margin-right: 55px;
 }
 
 .logo-bumn-bottom img{
-  margin-top: 40px;
+  width: 121px !important;
+  margin-top: 55px;
 
   @media (min-width: 768px) {
     position: relative;
@@ -1181,6 +1183,12 @@ header.wp-block-template-part {
 .rk-social-media{
   display: flex;
   justify-content: end;
+  margin-bottom: 0;
+  @media (min-width: 768px) {
+    position: relative;
+    top: 75px;
+  }
+
   li{
     list-style: none;
     padding-left: 10px;
@@ -1368,6 +1376,10 @@ header.wp-block-template-part {
 
 .rk-tt-uc {
   text-transform: uppercase;
+}
+
+.row-cols-xxl-8 {
+  gap: 24px 0;
 }
 
 @media (min-width: 1200px) {
