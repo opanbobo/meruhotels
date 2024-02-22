@@ -1299,9 +1299,22 @@ header.wp-block-template-part {
     @media screen and (max-width:768px) {
       padding-bottom: 0 !important;
     }
+    .rk-nav-service-title {
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      a {
+        color: #D9D9D9;
+      }
+      @media screen and (min-width:768px) {
+        margin-bottom: 16px;
+      }
+    }
     .rk-nav-service{
       .wp-block-navigation-item{
-        font-size: 15px;
+        font-size: 10px;
+        letter-spacing: 0.03em;
+        line-height: 18px;
       }
     }
     .footer-menu-left{
@@ -1334,7 +1347,10 @@ header.wp-block-template-part {
       }
     }
     .footer-right{
-      font-size: 13px;
+      p {
+        font-size: 10px;
+        line-height: 21px;
+      }
       @media screen and (max-width:768px) {
         text-align: center;
         .block{
@@ -1343,7 +1359,7 @@ header.wp-block-template-part {
         }
       }
       .title-col-large{
-        font-size: 25px;
+        font-size: 17px;
         font-family: 'Voyage';
       }
     }

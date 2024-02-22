@@ -60,7 +60,7 @@ function rk_room( $atts, $content = null ) {
     $output .= '<h2 class="rk-room-title">'. $content[$atts['id']]['title'] .'</h2>';
     $output .= '<p class="desc">'. $content[$atts['id']]['content'] .'</p><p class="btn-reserve-room">';
     // $output .= '<a class="btn btn-gold" href="#"><span>Reserve '. $content[$atts['id']]['title'] .'</span></a>';
-    $output .= '<a class="btn btn-gold" href="#"><span>Reserve </span></a></p>';
+    $output .= '<a class="btn btn-gold" href="https://staahmax.staah.net/be/index_be?propertyId=OTEzMQ==&individual=true"><span>Reserve </span></a></p>';
     $output .= '</div>';
     $output .= '</div>';
 
