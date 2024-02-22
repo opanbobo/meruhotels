@@ -728,39 +728,6 @@ header.wp-block-template-part {
 }
 
 
-/// faq
-//////////
-.accordion-heading{
-  background: #0F2335;
-  p{
-    font-size: 28px;
-    a {
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      padding: 20px;
-      position: relative; // Add position relative
-
-      &::after {
-        content: ''; // Create a pseudo-element for the arrow
-        position: absolute;
-        top: 50%; // Position arrow vertically
-        right: 10px; // Adjust as needed
-        transition: transform 0.4s; // Apply transition to transform property
-        transform: translateY(-50%) rotate(180deg); // Rotate arrow when collapsed
-        background: url(../img/arrrow-white.png) no-repeat center; // Center arrow
-        width: 42px; // Set arrow width
-        height: 42px; // Set arrow height
-      }
-
-      &.collapsed::after {
-        transform: translateY(-50%); // Initially position arrow in the middle
-      }
-    }
-  }
-}
-
-
 /// about us
 //////////////
 .journey-wrapper{
@@ -888,6 +855,38 @@ header.wp-block-template-part {
     @media screen and (max-width:768px) {
       height: 350px !important;
       object-fit: cover;
+    }
+  }
+}
+
+/// faq
+//////////
+.accordion-heading{
+  background: #0F2335;
+  p{
+    font-size: 28px;
+    a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 20px;
+      position: relative; // Add position relative
+
+      &::after {
+        content: ''; // Create a pseudo-element for the arrow
+        position: absolute;
+        top: 50%; // Position arrow vertically
+        right: 10px; // Adjust as needed
+        transition: transform 0.4s; // Apply transition to transform property
+        transform: translateY(-50%) rotate(180deg); // Rotate arrow when collapsed
+        background: url(../img/arrrow-white.png) no-repeat center; // Center arrow
+        width: 42px; // Set arrow width
+        height: 42px; // Set arrow height
+      }
+
+      &.collapsed::after {
+        transform: translateY(-50%); // Initially position arrow in the middle
+      }
     }
   }
 }

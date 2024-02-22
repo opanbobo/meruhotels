@@ -3107,7 +3107,11 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 }
 
 .collapse {
-	display: none;
+    @if($additional-selector == '') {
+        display: none;
+    } @else {
+        opacity: 0.5;
+    }
 }
 
 .collapse.show {
