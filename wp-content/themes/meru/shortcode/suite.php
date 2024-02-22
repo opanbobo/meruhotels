@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-function rk_room( $atts, $content = null ) {
+function rk_suite( $atts, $content = null ) {
     $atts = shortcode_atts( [
 		'posts_per_page' => 8,
 	], $atts );
@@ -45,10 +45,10 @@ function rk_room( $atts, $content = null ) {
             $output .= '<div class="'. $class_string .'" data-id="'. get_the_ID() .'">';
             $output .= '<div class="rk-room-images">';
 
-            $output .= get_image('image_1');
-            $output .= get_image('image_2');
-            $output .= get_image('image_3');
-            $output .= get_image('image_4');
+            $output .= rk_suite_get_image('image_1');
+            $output .= rk_suite_get_image('image_2');
+            $output .= rk_suite_get_image('image_3');
+            $output .= rk_suite_get_image('image_4');
 
             $output .= '</div>'; // rk-room-images
 
@@ -79,9 +79,9 @@ function rk_room( $atts, $content = null ) {
 
     return $output;
 }
-add_shortcode( 'rk_room', 'rk_room' );
+add_shortcode( 'rk_suite', 'rk_suite' );
 
-function get_image($field_name = 'image_1') {
+function rk_suite_get_image($field_name = 'image_1') {
 
     $output = '';
 
