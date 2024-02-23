@@ -6217,25 +6217,22 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .d-inline {
-    @if ($additional-selector == '') {
-        display: inline!important;
-    } @else {
+    display: inline!important;
+    @if ($additional-selector != '') {
         opacity: 1;
     }
 }
 
 .d-inline-block {
-    @if ($additional-selector == '') {
-        display: inline-block!important;
-    } @else {
+    display: inline-block!important;
+    @if ($additional-selector != '') {
         opacity: 1;
     }
 }
 
 .d-block {
-    @if ($additional-selector == '') {
-        display: block!important;
-    } @else {
+    display: block!important;
+    @if ($additional-selector != '') {
         opacity: 1;
     }
 }
@@ -6253,11 +6250,10 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .d-flex#{$additional-selector} {
-    @if ($additional-selector == '') {
-        display: -webkit-box!important;
-        display: -ms-flexbox!important;
-        display: flex!important;
-    } @else {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    @if ($additional-selector != '') {
         opacity: 1;
     }
 }
@@ -6278,25 +6274,22 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-sm-inline {
-		@if ($additional-selector == '') {
-            display: inline!important;
-        } @else {
+		display: inline!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-sm-inline-block {
-		@if ($additional-selector == '') {
-            display: inline-block!important;
-        } @else {
+		display: inline-block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-sm-block {
-		@if ($additional-selector == '') {
-            display: block!important;
-        } @else {
+		display: block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6314,11 +6307,10 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-sm-flex#{$additional-selector} {
-		@if ($additional-selector == '') {
-            display: -webkit-box!important;
-            display: -ms-flexbox!important;
-            display: flex!important;
-        } @else {
+		display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6340,25 +6332,22 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-md-inline {
-		@if ($additional-selector == '') {
-            display: inline!important;
-        } @else {
+		display: inline!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-md-inline-block {
-		@if ($additional-selector == '') {
-            display: inline-block!important;
-        } @else {
+		display: inline-block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-md-block {
-		@if ($additional-selector == '') {
-            display: block!important;
-        } @else {
+		display: block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6376,11 +6365,10 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-md-flex#{$additional-selector} {
-		@if ($additional-selector == '') {
-            display: -webkit-box!important;
-            display: -ms-flexbox!important;
-            display: flex!important;
-        } @else {
+		display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6402,25 +6390,22 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-lg-inline {
-		@if ($additional-selector == '') {
-            display: inline!important;
-        } @else {
+		display: inline!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-lg-inline-block {
-		@if ($additional-selector == '') {
-            display: inline-block!important;
-        } @else {
+		display: inline-block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-lg-block {
-		@if ($additional-selector == '') {
-            display: block!important;
-        } @else {
+		display: block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6438,11 +6423,10 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-lg-flex#{$additional-selector} {
-		@if ($additional-selector == '') {
-            display: -webkit-box!important;
-            display: -ms-flexbox!important;
-            display: flex!important;
-        } @else {
+		display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6464,25 +6448,22 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-xl-inline {
-		@if ($additional-selector == '') {
-            display: inline!important;
-        } @else {
+		display: inline!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-xl-inline-block {
-		@if ($additional-selector == '') {
-            display: inline-block!important;
-        } @else {
+		display: inline-block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
 
 	.d-xl-block {
-		@if ($additional-selector == '') {
-            display: block!important;
-        } @else {
+		display: block!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
@@ -6500,11 +6481,10 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	}
 
 	.d-xl-flex#{$additional-selector} {
-		@if ($additional-selector == '') {
-            display: -webkit-box!important;
-            display: -ms-flexbox!important;
-            display: flex!important;
-        } @else {
+		display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        @if ($additional-selector != '') {
             opacity: 1;
         }
 	}
