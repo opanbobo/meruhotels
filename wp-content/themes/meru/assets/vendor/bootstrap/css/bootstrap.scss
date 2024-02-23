@@ -6209,7 +6209,11 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .d-none {
-	display: none!important;
+    @if ($additional-selector == '') {
+        display: none!important;
+    } @else {
+        opacity: 0.5;
+    }
 }
 
 .d-inline {
@@ -6250,7 +6254,11 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 
 @media (min-width:576px) {
 	.d-sm-none {
-		display: none!important;
+		@if ($additional-selector == '') {
+            display: none!important;
+        } @else {
+            opacity: 0.5;
+        }
 	}
 
 	.d-sm-inline {
@@ -6292,7 +6300,11 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 
 @media (min-width:768px) {
 	.d-md-none {
-		display: none!important;
+		@if ($additional-selector == '') {
+            display: none!important;
+        } @else {
+            opacity: 0.5;
+        }
 	}
 
 	.d-md-inline {
@@ -6334,7 +6346,11 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 
 @media (min-width:992px) {
 	.d-lg-none {
-		display: none!important;
+		@if ($additional-selector == '') {
+            display: none!important;
+        } @else {
+            opacity: 0.5;
+        }
 	}
 
 	.d-lg-inline {
@@ -6376,7 +6392,11 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 
 @media (min-width:1200px) {
 	.d-xl-none {
-		display: none!important;
+		@if ($additional-selector == '') {
+            display: none!important;
+        } @else {
+            opacity: 0.5;
+        }
 	}
 
 	.d-xl-inline {
