@@ -20,6 +20,17 @@ body{
   background: #FFFFFF;
 }
 
+.card-body{
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1); 
+  p{
+    margin-bottom: 0;
+  }
+}
+
 figure{
   margin: 0;
 }
@@ -876,13 +887,18 @@ header.wp-block-template-part {
   background: #0F2335;
   p{
     font-size: 28px;
+      @media screen and (max-width:768px) {
+        font-size: 20px;
+      }
     a {
       display: block;
       color: #fff;
       text-decoration: none;
       padding: 20px;
       position: relative; // Add position relative
-
+      @media screen and (max-width:768px) {
+        padding-right: 40px;
+      }
       &::after {
         content: ''; // Create a pseudo-element for the arrow
         position: absolute;
@@ -893,6 +909,10 @@ header.wp-block-template-part {
         background: url(../img/arrrow-white.png) no-repeat center; // Center arrow
         width: 42px; // Set arrow width
         height: 42px; // Set arrow height
+        @media screen and (max-width:768px) {
+          background-size: 60%;
+          background-position-y: top;
+        }
       }
 
       &.collapsed::after {
