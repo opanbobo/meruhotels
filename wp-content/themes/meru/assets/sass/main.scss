@@ -10,6 +10,14 @@
 body{
   font-family: 'Univers';
   overflow-x: hidden;
+
+  @if($additional-selector == '') {
+    background: #F0EEDC;
+  }
+}
+
+.page-template-page-hero {
+  background: #FFFFFF;
 }
 
 figure{
@@ -46,9 +54,9 @@ figure{
 
 .btn-top-header{
   font-size: 20px !important;
-  color: #fff !important;
+  color: #0F2335 !important;
   text-transform: uppercase;
-  border-color: #fff !important;
+  border-color: #0F2335 !important;
   @media screen and (max-width: 768px) {
     font-size: 14px !important;
     padding: 10px !important;
@@ -59,11 +67,25 @@ figure{
   }
 }
 
+.page-template-page-hero .btn-top-header{
+  color: #fff !important;
+  border-color: #fff !important;
+  &:hover{
+    color: #000 !important;
+  }
+}
+
 header.wp-block-template-part {
   padding-top: 140px;
   padding-bottom: 130px;
   position: relative;
   z-index: 10;
+  @media screen and (max-width: 768px) {
+    padding: 115px 0 80px;
+  }
+}
+
+.page-template-page-hero header.wp-block-template-part {
   margin-bottom: -322px;
   @media screen and (max-width: 768px) {
     padding: 50px 0;
@@ -95,7 +117,7 @@ header.wp-block-template-part {
   .wp-block-navigation__responsive-container-open {
     width: 42px;
     height: 42px;
-    background: url(../img/burger.svg) center center no-repeat;
+    background: url(../img/burger-black.svg) center center no-repeat;
   }
 
   .wp-block-navigation__responsive-container-open svg,
@@ -131,6 +153,12 @@ header.wp-block-template-part {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.page-template-page-hero .rk-nav-header {
+  .wp-block-navigation__responsive-container-open {
+    background: url(../img/burger.svg) center center no-repeat;
   }
 }
 
@@ -831,27 +859,6 @@ header.wp-block-template-part {
   }
 }
 
-
-.page-template-page-no-container-hero {
-  background: #F0EEDC;
-}
-
-.page-template-page-no-container-hero header.wp-block-template-part {
-  margin-bottom: 0;
-}
-
-.page-template-page-no-container-hero .rk-nav-header .wp-block-navigation__responsive-container-open {
-  background: url(../img/burger-black.svg) center center no-repeat;
-}
-
-.page-template-page-no-container-hero .btn-top-header {
-  border-color: #0F2335 !important;
-  color: #0F2335 !important;
-}
-
-.page-template-page-no-container-hero p {
-  font-size: 18px;
-}
 
 
 .img-mobile-square{
