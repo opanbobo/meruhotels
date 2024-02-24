@@ -398,7 +398,12 @@ header.wp-block-template-part {
 /// home
 ///////////////
 
-.home{
+// .home{
+
+  .title-detail-page{
+    font-family: 'Voyage';
+    font-size: 32px;
+  }
 
   .home-slider-wrapper {
     @media screen and (max-width:768px) {
@@ -407,6 +412,23 @@ header.wp-block-template-part {
   }
 
   .center-mode-slider{
+
+    .bg-overlay-blue-wrapper{
+      .bg-overlay-blue-blocks{
+        top: 88%;
+      }
+      &:hover{
+        .bg-overlay-blue-blocks{
+          top: 102%;
+        }
+      }
+      .bg-cover-img{
+        &::after{
+          top: 50% !important;
+        }
+      }
+    }
+
     .slick-arrow{
       background: url(../img/btn-sliders.png) no-repeat;
       text-indent: -9999px;
@@ -726,7 +748,7 @@ header.wp-block-template-part {
     }
   }
 
-}
+// }
 
 .home-exp-wrapper{
   background-color: #F0EEDC;
