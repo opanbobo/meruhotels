@@ -54,7 +54,6 @@ add_action('init', 'rk_add_editor_styles');
 function custom_theme_menu_location() {
     register_nav_menu('menu_location', __('Menu Location', 'theme-textdomain'));
 }
-
 add_action('after_setup_theme', 'custom_theme_menu_location');
 
 function rk_image_sizes() {
@@ -76,6 +75,14 @@ function rk_image_size_names_choose() {
 	];
 }
 add_filter( 'image_size_names_choose', 'rk_image_size_names_choose');
+
+function rk_ga_insert() {
+?><!-- Google Analytics Code -->
+
+<!-- End Google Analytics Code -->
+<?php
+}
+add_action('wp_head', 'rk_ga_insert');
 
 function rk_html_id($output) {
 	$output .= ' id="rk"';
