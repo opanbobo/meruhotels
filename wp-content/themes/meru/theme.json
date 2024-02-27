@@ -8,6 +8,11 @@
 			"title": "Header"
 		},
 		{
+			"area": "header",
+			"name": "header-tnc",
+			"title": "Header TNC"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
