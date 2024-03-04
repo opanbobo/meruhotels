@@ -76,6 +76,14 @@ function rk_image_size_names_choose() {
 }
 add_filter( 'image_size_names_choose', 'rk_image_size_names_choose');
 
+function rk_gsc_insert() {
+?><!-- Google Search Console Meta Tag Code -->
+
+<!-- End Google Search Console Meta Tag Code -->
+<?php
+}
+add_action('wp_head', 'rk_gsc_insert');
+
 function rk_ga_insert() {
 ?><!-- Google Analytics Code -->
 
