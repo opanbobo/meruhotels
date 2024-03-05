@@ -92,6 +92,14 @@ function rk_ga_insert() {
 }
 add_action('wp_head', 'rk_ga_insert');
 
+function rk_ga_body_insert() {
+?><!-- Google Tag Manager Code at Body -->
+
+<!-- End Google Tag Manager Code at Body -->
+<?php
+}
+add_action('wp_body_open', 'rk_ga_body_insert');
+
 function rk_html_id($output) {
 	$output .= ' id="rk"';
 
