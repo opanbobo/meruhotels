@@ -93,9 +93,10 @@ function rk_ga_insert() {
 add_action('wp_head', 'rk_ga_insert');
 
 function rk_ga_body_insert() {
-?><!-- Google Tag Manager Code at Body -->
-
-<!-- End Google Tag Manager Code at Body -->
+?><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFB25TQ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <?php
 }
 add_action('wp_body_open', 'rk_ga_body_insert');
