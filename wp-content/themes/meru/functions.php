@@ -60,21 +60,122 @@ function rk_image_sizes() {
     add_image_size('img-slider-bfb', 432, 202, true);
     add_image_size('suite', 681, 440, true);
 
+    add_image_size('hero-1536', 3072, 1964, true);
+    add_image_size('hero-1024', 2048, 1964, true);
+    add_image_size('hero-768', 1536, 1964, true);
+    add_image_size('hero-300', 600, 1964, true);
+
     add_theme_support( 'post-thumbnails' );
 }
 add_action('after_setup_theme', 'rk_image_sizes');
 
 function rk_image_size_names_choose() {
     return [
-		'thumbnail'      => __( 'Thumbnail', 'rk' ),
-		'medium'         => __( 'Medium', 'rk' ),
+		'thumbnail'      => __( 'Thumbnail', 'rk' ), // 150x150
+		'medium'         => __( 'Medium', 'rk' ), // 300x300
+		'medium_large'   => __( 'Medium Large', 'rk' ), // 768x768
 		'img-slider-bfb' => __( 'Image Slider BFB 432x202', 'rk' ),
 		'suite'          => __( 'Suite 681x440', 'rk' ),
-		'large'          => __( 'Large', 'rk' ),
+		'large'          => __( 'Large', 'rk' ), // 1024x1024
 		'full'           => __( 'Full Size', 'rk' ),
 	];
 }
 add_filter( 'image_size_names_choose', 'rk_image_size_names_choose');
+
+function rk_calculate_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
+
+    if (!preg_match('/cover-982-/', $image_src)) return $sources;
+
+    $image_meta = apply_filters( 'wp_calculate_image_srcset_meta', $image_meta, $size_array, $image_src, $attachment_id );
+
+    if ( empty( $image_meta['sizes'] ) || ! isset( $image_meta['file'] ) || strlen( $image_meta['file'] ) < 4 ) {
+        return false;
+    }
+
+    $image_sizes = $image_meta['sizes'];
+
+	$image_width  = (int) $size_array[0];
+	$image_height = (int) $size_array[1];
+
+	if ( $image_width < 1 ) {
+		return false;
+	}
+
+    $image_basename = wp_basename( $image_meta['file'] );
+
+    if ( ! isset( $image_sizes['thumbnail']['mime-type'] ) || 'image/gif' !== $image_sizes['thumbnail']['mime-type'] ) {
+		$image_sizes[] = array(
+			'width'  => $image_meta['width'],
+			'height' => $image_meta['height'],
+			'file'   => $image_basename,
+		);
+	} elseif ( str_contains( $image_src, $image_meta['file'] ) ) {
+		return false;
+	}
+
+	$dirname = _wp_get_attachment_relative_path( $image_meta['file'] );
+
+	if ( $dirname ) {
+		$dirname = trailingslashit( $dirname );
+	}
+
+	$upload_dir    = wp_get_upload_dir();
+	$image_baseurl = trailingslashit( $upload_dir['baseurl'] ) . $dirname;
+
+    if ( is_ssl() && ! str_starts_with( $image_baseurl, 'https' ) && parse_url( $image_baseurl, PHP_URL_HOST ) === $_SERVER['HTTP_HOST'] ) {
+		$image_baseurl = set_url_scheme( $image_baseurl, 'https' );
+	}
+
+    $image_edited = preg_match( '/-e[0-9]{13}/', wp_basename( $image_src ), $image_edit_hash );
+
+    $max_srcset_image_width = apply_filters( 'max_srcset_image_width', 2048, $size_array );
+
+    $sources = array();
+
+    $src_matched = false;
+
+    foreach ( $image_sizes as $image ) {
+		$is_src = false;
+
+		if ( ! is_array( $image ) ) {
+			continue;
+		}
+
+		if ( ! $src_matched && str_contains( $image_src, $dirname . $image['file'] ) ) {
+			$src_matched = true;
+			$is_src      = true;
+		}
+
+		if ( $image_edited && ! strpos( $image['file'], $image_edit_hash[0] ) ) {
+			continue;
+		}
+
+		// if ( $max_srcset_image_width && $image['width'] > $max_srcset_image_width && ! $is_src ) {
+		// 	continue;
+		// }
+
+		if ( $image['height'] >= 1964 || $is_src ) {
+
+            $source = array(
+				'url'        => $image_baseurl . $image['file'],
+				'descriptor' => 'w',
+				'value'      => $image['width'] / 2,
+			);
+
+			if ( $is_src ) {
+				$sources = array( $image['width'] => $source ) + $sources;
+			} else {
+				$sources[ $image['width'] ] = $source;
+			}
+		}
+	}
+
+    return $sources;
+}
+
+add_filter( 'wp_calculate_image_srcset', 'rk_calculate_image_srcset', 1000, 5 );
+
+add_filter( 'big_image_size_threshold', '__return_false' );
 
 function rk_gsc_insert() {
 ?><!-- Google Search Console Meta Tag Code -->
