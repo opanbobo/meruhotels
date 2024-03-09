@@ -60,10 +60,12 @@ function rk_image_sizes() {
     add_image_size('img-slider-bfb', 432, 202, true);
     add_image_size('suite', 681, 440, true);
 
-    add_image_size('hero-1536', 3072, 1964, true);
-    add_image_size('hero-1024', 2048, 1964, true);
-    add_image_size('hero-768', 1536, 1964, true);
-    add_image_size('hero-300', 600, 1964, true);
+    add_image_size('cover-1536', 3072, 1964, true);
+    add_image_size('cover-1024', 2048, 1964, true);
+    add_image_size('cover-768', 1536, 1964, true);
+    add_image_size('cover-300', 600, 1964, true);
+
+    add_image_size('slider-suite', 1674, 1116, true);
 
     add_theme_support( 'post-thumbnails' );
 }
@@ -84,7 +86,21 @@ add_filter( 'image_size_names_choose', 'rk_image_size_names_choose');
 
 function rk_calculate_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
 
-    if (!preg_match('/cover-982-/', $image_src)) return $sources;
+    $is_custom = false;
+    $is_cover = false;
+    $is_slider_suite = false;
+
+    if (preg_match('/cover-982-/', $image_src)) {
+        $is_custom = true;
+        $is_cover = true;
+    };
+
+    if (preg_match('/slider-558-/', $image_src)) {
+        $is_custom = true;
+        $is_slider_suite = true;
+    };
+
+    if (!$is_custom) return $sources;
 
     $image_meta = apply_filters( 'wp_calculate_image_srcset_meta', $image_meta, $size_array, $image_src, $attachment_id );
 
@@ -154,7 +170,15 @@ function rk_calculate_image_srcset( $sources, $size_array, $image_src, $image_me
 		// 	continue;
 		// }
 
-		if ( $image['height'] >= 1964 || $is_src ) {
+
+        $is_pass = false;
+        if ($is_cover && $image['height'] >= 1964 ) {
+            $is_pass = true;
+        } elseif ($is_slider_suite && $image['height'] >= 1116 ) {
+            $is_pass = true;
+        }
+
+		if ( $is_pass || $is_src ) {
 
             $source = array(
 				'url'        => $image_baseurl . $image['file'],
