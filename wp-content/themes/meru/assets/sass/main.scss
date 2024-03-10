@@ -209,6 +209,12 @@ header.wp-block-template-part {
   }
 }
 
+.img-pola-room {
+	@media screen and (max-width:768px) {
+		padding-bottom: 15px !important;
+	}
+}
+
 // .wp-block-image.size-full{
 //   img{
 //     @media screen and (max-width:768px) {
@@ -251,11 +257,11 @@ header.wp-block-template-part {
 .title-section-page{
   // font-family: 'Minion';
   font-family: 'Voyage';
-  font-size: 43px;
+  font-size: 40px;
   color: #0F2335;
   @media screen and (max-width:768px) {
-    font-size: 38px;
-    line-height: 55px;
+    font-size: 25px;
+    line-height: 33px;
   }
 }
 
@@ -305,10 +311,15 @@ header.wp-block-template-part {
 
 
 .rk-breadcrumb {
-  padding: 60px 15px;
+  padding: 25px 15px 15px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 9px;
   color: #4D4D4D;
+
+  @media screen and (min-width:768px) {
+    padding: 60px 15px;
+	  font-size: 14px;
+  }
 
   p {
     margin-bottom: 0;
@@ -407,6 +418,9 @@ header.wp-block-template-part {
   .title-detail-page{
     font-family: 'Voyage';
     font-size: 32px;
+	@media screen and (max-width:768px) {
+      font-size: 20px;
+    }
   }
 
   .home-slider-wrapper {
@@ -1207,6 +1221,46 @@ header.wp-block-template-part {
       min-height: auto;
     }
   }
+}
+
+.room-feature {
+	> .wp-block-group {
+		padding: 25px 20px;
+
+		@media screen and (max-width:768px) {
+			padding: 25px 40px;
+		}
+	}
+
+	.wp-block-heading {
+		padding-bottom: 20px;
+
+		@media screen and (max-width:768px) {
+			font-size: 22px;
+		}
+	}
+
+	.room-columns {
+		@media screen and (max-width:768px) {
+			gap: 0;
+		}
+	}
+}
+
+.room-images {
+	margin-bottom: 80px !important;
+
+	@media screen and (max-width:768px) {
+		margin-bottom: 40px !important;
+	}
+}
+
+.room-other {
+	.title-section-page {
+		@media screen and (max-width:768px) {
+			margin-bottom: -20px;
+		}
+	}
 }
 
 
