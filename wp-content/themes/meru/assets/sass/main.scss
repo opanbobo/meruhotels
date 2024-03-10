@@ -801,6 +801,9 @@ header.wp-block-template-part {
 /// about us
 //////////////
 .about-slider{
+  &.slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
   .slick-dots{
     bottom: 20px;
     li{
@@ -827,6 +830,12 @@ header.wp-block-template-part {
   }
 }
 .journey-wrapper{
+  padding-bottom: 10px;
+  .title-section-page {
+    font-size: 56px;
+    line-height: 1.5;
+    padding: 25px 0;
+  }
   background: #F0EEDC;
   position: relative;
   z-index: 1;
@@ -860,6 +869,30 @@ header.wp-block-template-part {
     p{
       font-size: 16px;
     }
+  }
+  .title-block {
+    padding-top: 30px;
+    font-size: 36px;
+  }
+}
+
+.about-intro {
+  .title-section-page {
+    font-size: 56px;
+    line-height: 1.5;
+  }
+  .subtitle-section-page {
+    font-size: 27px;
+    line-height: 1.8;
+    margin-bottom: -20px;
+  }
+}
+.container-about-slider {
+  margin-bottom: 65px !important;
+}
+.about-direction {
+  .space {
+    margin-bottom: 65px;
   }
 }
 
