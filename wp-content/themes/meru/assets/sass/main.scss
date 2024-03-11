@@ -443,6 +443,12 @@ header.wp-block-template-part {
         }
       }
       .bg-cover-img{
+        .wp-block-heading {
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
         &::after{
           top: 50% !important;
         }
@@ -1255,6 +1261,10 @@ header.wp-block-template-part {
   font-size: 32px;
   font-family: 'Voyage';
   margin-bottom: 20px;
+  a {
+    color: #4D4D4D;
+    text-decoration: none;
+  }
   @media screen and (max-width:768px) {
     font-size: 32px;
   }

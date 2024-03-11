@@ -28,6 +28,7 @@ function rk_suite( $atts, $content = null ) {
             $custom_query->the_post();
 
             $wide = get_post_meta(get_the_ID(), 'wide', true);
+            $detail_link = get_post_meta(get_the_ID(), 'detail_link', true);
 
             $class = [];
             $class[] = 'rk-room';
@@ -56,7 +57,7 @@ function rk_suite( $atts, $content = null ) {
             $output .= '<div class="rk-room-content">';
             $output .= '<div class="rk-room-text">';
 
-            $output .= '<h2 class="rk-room-title">'. get_the_title() .'</h2>';
+            $output .= '<h2 class="rk-room-title"><a href="'. $detail_link .'">'. get_the_title() .'</a></h2>';
             $output .= '<p class="desc">'. get_the_excerpt() .'</p>';
 
             $output .= '<p class="btn-reserve-room">';
