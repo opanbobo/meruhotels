@@ -97,7 +97,7 @@ header.wp-block-template-part {
   position: relative;
   z-index: 10;
   @media screen and (max-width: 768px) {
-    padding: 115px 0 80px;
+    padding: 115px 0 50px;
   }
 }
 
@@ -910,6 +910,31 @@ header.wp-block-template-part {
   }
 }
 
+.page-template-page-no-container-hero {
+  .title-section-page {
+    font-size: 56px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+    @media screen and (max-width:768px){
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .img-pola-title {
+    margin-bottom: 55px;
+    @media screen and (max-width:768px){
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.term-point {
+  margin-bottom: 35px;
+}
+
 
 /// faq
 ////////////
@@ -948,10 +973,6 @@ header.wp-block-template-part {
   header{
     margin-bottom: 0 !important;
     color: #0F2335;
-    @media screen and (max-width:768px){
-      padding-top: 115px;
-      padding-bottom: 80px;
-    }
     .wp-block-navigation__responsive-container-open{
       background: url(../img/burger-black.svg) center center no-repeat;
     }
