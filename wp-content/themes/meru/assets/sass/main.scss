@@ -93,16 +93,17 @@ figure{
 
 header.wp-block-template-part {
   padding-top: 140px;
-  padding-bottom: 130px;
+  padding-bottom: 80px;
   position: relative;
   z-index: 10;
   @media screen and (max-width: 768px) {
-    padding: 115px 0 50px;
+    // padding: 115px 0 50px;
+    padding: 50px 0;
   }
 }
 
 .page-template-page-hero header.wp-block-template-part {
-  margin-bottom: -322px;
+  margin-bottom: -272px;
   @media screen and (max-width: 768px) {
     padding: 50px 0;
   }
@@ -114,7 +115,7 @@ header.wp-block-template-part {
   transform: translateX(-50%);
   text-align: center;
   @if ($additional-selector == '') {
-    top: 127px;
+    top: 80px;
   } @else {
     top: 0px;
   }
@@ -122,7 +123,8 @@ header.wp-block-template-part {
     top: 57px;
   }
   a{
-    width: 145px;
+    display: inline-block;
+    // width: 145px;
     @media screen and (max-width:768px) {
       width: 100px;
     }
@@ -643,7 +645,7 @@ header.wp-block-template-part {
   .home-journey-wrapper{
     background: #F0EEDC;
     position: relative;
-    &::before{
+    &::before {
       content: '';
       background: url(../img/bg-journey-left.png) no-repeat;
       background-size: contain;
@@ -750,7 +752,7 @@ header.wp-block-template-part {
     font-size: 38px !important;
     margin-bottom: 13px;
     @media screen and (max-width:768px) {
-      font-size: 38px !important;
+      font-size: 30px !important;
     }
   }
 
@@ -849,29 +851,36 @@ header.wp-block-template-part {
     font-size: 56px;
     line-height: 1.5;
     padding: 25px 0;
+    @media screen and (max-width:768px){
+      font-size: 25px;
+    }
   }
   background: #F0EEDC;
   position: relative;
   z-index: 1;
   &::before{
-    content: '';
-    background: url(../img/bg-journey-left.png) no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
+    @media screen and (min-width:768px) {
+      content: '';
+      background: url(../img/bg-journey-left.png) no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+    }
   }
   &::after{
-    content: '';
-    background: url(../img/bg-journey-right.png) no-repeat right;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
+    @media screen and (min-width:768px) {
+      content: '';
+      background: url(../img/bg-journey-right.png) no-repeat right;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+    }
   }
 
   .home-journey-column{
@@ -887,6 +896,18 @@ header.wp-block-template-part {
   .title-block {
     padding-top: 30px;
     font-size: 36px;
+    @media screen and (max-width:768px) {
+      text-align: center;
+      font-size: 25px;
+      padding-top: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.rk-discovery-mobile {
+  .slider-item {
+    padding: 0 20px;
   }
 }
 
@@ -894,19 +915,38 @@ header.wp-block-template-part {
   .title-section-page {
     font-size: 56px;
     line-height: 1.5;
+    @media screen and (max-width:768px){
+      font-size: 25px;
+    }
   }
   .subtitle-section-page {
     font-size: 27px;
     line-height: 1.8;
     margin-bottom: -20px;
+    @media screen and (max-width:768px){
+      font-size: 16px;
+      padding-bottom: 35px;
+      line-height: 1.5;
+    }
   }
 }
 .container-about-slider {
   margin-bottom: 65px !important;
+  @media screen and (max-width:768px){
+    margin-bottom: 50px !important;
+  }
 }
 .about-direction {
+  .universe-20 {
+    @media screen and (max-width:768px){
+      line-height: 1.5;
+    }
+  }
   .space {
     margin-bottom: 65px;
+    @media screen and (max-width:768px){
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -943,10 +983,6 @@ header.wp-block-template-part {
   header{
     margin-bottom: 0 !important;
     color: #0F2335;
-    @media screen and (max-width:768px){
-      padding-top: 115px;
-      padding-bottom: 80px;
-    }
     .wp-block-navigation__responsive-container-open{
       background: url(../img/burger-black.svg) center center no-repeat;
     }
@@ -1004,12 +1040,20 @@ header.wp-block-template-part {
 
 /// faq
 //////////
+
+.accordion-wrapper {
+  padding-top: 20px;
+  @media screen and (max-width:768px) {
+    padding-top: 10px;
+  }
+}
+
 .accordion-heading{
   background: #0F2335;
   p{
-    font-size: 28px;
+    font-size: 24px;
       @media screen and (max-width:768px) {
-        font-size: 20px;
+        font-size: 16px;
       }
     a {
       display: block;
@@ -1031,14 +1075,30 @@ header.wp-block-template-part {
         width: 42px; // Set arrow width
         height: 42px; // Set arrow height
         @media screen and (max-width:768px) {
-          background-size: 60%;
-          background-position-y: top;
+          width: 30px;
+          height: 30px;
+          background-size: 100%;
         }
       }
 
       &.collapsed::after {
         transform: translateY(-50%); // Initially position arrow in the middle
       }
+    }
+  }
+}
+
+.accordion-body {
+  font-size: 20px;
+
+  @media screen and (max-width:768px) {
+    font-size: 14px;
+  }
+
+  .card-body {
+    margin-top: 10px;
+    @media screen and (max-width:768px) {
+      padding: 40px 20px;
     }
   }
 }
