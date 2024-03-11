@@ -18,6 +18,13 @@ jQuery(document).ready(function($) {
         slidesToShow: 3
     });
 
+    $('.rk-discovery-mobile').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+        draggable: false,
+    });
+
 
     $('.rk-room-images').slick({
         slidesToShow: 1,
