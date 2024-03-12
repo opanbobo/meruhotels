@@ -50,6 +50,10 @@ figure{
   }
 }
 
+.wp-block-image img {
+  object-fit: cover;
+}
+
 // header
 //////////////
 .rk-nav-header.wp-block-navigation .wp-block-navigation-item__content{
