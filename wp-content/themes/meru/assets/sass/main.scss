@@ -324,7 +324,13 @@ header.wp-block-template-part {
     font-size: 40px !important;
   }
 }
-
+.title-overlay-second-section{
+  font-family: 'Voyage';
+  font-size: 35px !important;
+  @media screen and (max-width:768px) {
+    font-size: 20px !important;
+  }
+}
 
 .rk-breadcrumb {
   padding: 25px 15px 15px;
@@ -1382,6 +1388,7 @@ header.wp-block-template-part {
   font-family: Voyage;
   font-size: 30px;
   color: #fff;
+  z-index: 1;
 
   @media screen and (max-width:768px) {
     font-size: 20px;
@@ -1399,6 +1406,29 @@ header.wp-block-template-part {
     position: absolute;
     left: 0;
     top: 60%;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) -27.06%, rgba(87, 100, 111, 0) 6.3%, rgba(15, 35, 53, 0.87) 71.56%);
+  }
+}
+
+
+.event-title-text{
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
+
+.event-thumb-img {
+  position: relative;
+  height: 100%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20%;
     bottom: 0;
     right: 0;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) -27.06%, rgba(87, 100, 111, 0) 6.3%, rgba(15, 35, 53, 0.87) 71.56%);
