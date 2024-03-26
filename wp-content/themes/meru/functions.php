@@ -13,16 +13,16 @@ require( get_template_directory() . '/blocks/init.php' );
 function rk_enqueue_styles() {
 
     // Vendor CSS Files
-    wp_register_style( 'rk-bootstrap', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css', [], '0.0.10' );
-    wp_register_style( 'rk-bootstrap-icons', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap-icons/bootstrap-icons.css', [], '0.0.10' );
-    wp_register_style( 'rk-fontawesome-free', get_stylesheet_directory_uri() . '/assets/vendor/fontawesome-free/css/all.min.css', [], '0.0.10' );
-    wp_register_style( 'rk-glightbox', get_stylesheet_directory_uri() . '/assets/vendor/glightbox/css/glightbox.min.css', [], '0.0.10' );
-    wp_register_style( 'rk-select2', get_stylesheet_directory_uri() . '/assets/vendor/select2/css/select2.min.css', [], '0.0.10' );
-    wp_register_style( 'rk-slick', get_stylesheet_directory_uri() . '/assets/vendor/slick/css/slick.css', [], '0.0.10' );
-    wp_register_style( 'rk-slick-theme', get_stylesheet_directory_uri() . '/assets/vendor/slick/css/slick-theme.css', [], '0.0.10' );
+    wp_register_style( 'rk-bootstrap', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css', [], '0.0.13' );
+    wp_register_style( 'rk-bootstrap-icons', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap-icons/bootstrap-icons.css', [], '0.0.13' );
+    wp_register_style( 'rk-fontawesome-free', get_stylesheet_directory_uri() . '/assets/vendor/fontawesome-free/css/all.min.css', [], '0.0.13' );
+    wp_register_style( 'rk-glightbox', get_stylesheet_directory_uri() . '/assets/vendor/glightbox/css/glightbox.min.css', [], '0.0.13' );
+    wp_register_style( 'rk-select2', get_stylesheet_directory_uri() . '/assets/vendor/select2/css/select2.min.css', [], '0.0.13' );
+    wp_register_style( 'rk-slick', get_stylesheet_directory_uri() . '/assets/vendor/slick/css/slick.css', [], '0.0.13' );
+    wp_register_style( 'rk-slick-theme', get_stylesheet_directory_uri() . '/assets/vendor/slick/css/slick-theme.css', [], '0.0.13' );
 
     // Template Main CSS File
-    wp_register_style( 'rk-style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], '0.0.10' );
+    wp_register_style( 'rk-style', get_stylesheet_directory_uri() . '/assets/css/style.css', [], '0.0.13' );
 
     wp_enqueue_style( 'rk-bootstrap' );
     wp_enqueue_style( 'rk-bootstrap-icons' );
@@ -34,12 +34,12 @@ function rk_enqueue_styles() {
     wp_enqueue_style( 'rk-style' );
 
 
-    wp_enqueue_script('rk-bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), '0.0.10', true);
-    wp_enqueue_script('rk-glightbox', get_template_directory_uri() . '/assets/vendor/glightbox/js/glightbox.min.js', array('jquery'), '0.0.10', true);
-    wp_enqueue_script('rk-select2', get_template_directory_uri() . '/assets/vendor/select2/js/select2.min.js', array('jquery'), '0.0.10', true);
-    wp_enqueue_script('rk-slick', get_template_directory_uri() . '/assets/vendor/slick/js/slick.min.js', array('jquery'), '0.0.10', true);
-    wp_enqueue_script('rk-lenis', get_template_directory_uri() . '/assets/vendor/lenis/lenis.min.js', array('jquery'), '0.0.10', true);
-    wp_enqueue_script('rk-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '0.0.10', true);
+    wp_enqueue_script('rk-bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), '0.0.13', true);
+    wp_enqueue_script('rk-glightbox', get_template_directory_uri() . '/assets/vendor/glightbox/js/glightbox.min.js', array('jquery'), '0.0.13', true);
+    wp_enqueue_script('rk-select2', get_template_directory_uri() . '/assets/vendor/select2/js/select2.min.js', array('jquery'), '0.0.13', true);
+    wp_enqueue_script('rk-slick', get_template_directory_uri() . '/assets/vendor/slick/js/slick.min.js', array('jquery'), '0.0.13', true);
+    wp_enqueue_script('rk-lenis', get_template_directory_uri() . '/assets/vendor/lenis/lenis.min.js', array('jquery'), '0.0.13', true);
+    wp_enqueue_script('rk-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '0.0.13', true);
 
     wp_localize_script('rk-script', 'rkData', array(
         'themeUrl' => get_stylesheet_directory_uri(),

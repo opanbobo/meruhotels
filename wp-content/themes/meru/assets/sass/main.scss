@@ -1294,6 +1294,10 @@ header.wp-block-template-part {
   font-size: 36px;
   font-family: 'Voyage';
   margin-bottom: 20px;
+  a {
+    color: #212529;
+    text-decoration: none;
+  }
   @media screen and (max-width:768px) {
     font-size: 24px;
   }
