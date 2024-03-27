@@ -715,6 +715,11 @@ header.wp-block-template-part {
           top: 20%;
         }
     }
+    .bg-overlay-blue-wrapper.bg-overlay-no-text .bg-overlay-blue-blocks {
+      @media screen and (max-width:768px) {
+        top: 90%;
+      }
+    }
     .desc-overlay-img{
       @media (min-width: 1200px) {
         width: 80%;
@@ -741,9 +746,6 @@ header.wp-block-template-part {
       .bg-cover-img::after {
         top: -50%;
         opacity: 0.8;
-        @media screen and (max-width:768px) {
-          opacity: 0.8;
-        }
       }
       .bg-overlay-blue-blocks{
         top: 50%;
@@ -751,6 +753,23 @@ header.wp-block-template-part {
       }
       .desc-overlay-img{
         height: auto;
+      }
+    }
+    &.bg-overlay-no-text {
+      .bg-cover-img::after {
+        @media screen and (max-width:768px) {
+          top: 50%;
+        }
+      }
+      &:hover {
+        @media screen and (max-width:768px) {
+          .bg-cover-img::after {
+              opacity: 1;
+          }
+          .bg-overlay-blue-blocks{
+            transform: initial;
+          }
+        }
       }
     }
 
