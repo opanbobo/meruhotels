@@ -31,11 +31,17 @@ define( 'DB_PASSWORD', 'meru123@B3Rakkk' );
 /** Database hostname */
 define( 'DB_HOST', '153.92.15.5' );
 
+// define( 'DB_NAME', 'meruhotels' );
+// define( 'DB_USER', 'root' );
+// define( 'DB_PASSWORD', '' );
+// define( 'DB_HOST', 'localhost' );
+
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
 
 /**#@+
  * Authentication unique keys and salts.
@@ -48,14 +54,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'JVz}*os2H#m+y?5I.AVCuf[a%8Z sFl?r0KL}^8)BMub(9{)}P5N7[Zd MJuU6,V' );
-define( 'SECURE_AUTH_KEY',  'ysU.#4p,E2uGbdiCb5{-x)$+!Cm:>CMZ./GUMH&pXx7NsUu1~tp!q- Jw;FaR%hs' );
-define( 'LOGGED_IN_KEY',    '$X0000Y8d4_GTWS.Y*:EHZlU6K,S#o]7C|ht *%!4+9I$L{jbjr$`% c[s~AujcO' );
-define( 'NONCE_KEY',        'ji&4,IPpSw4$34IuW}5^F0l8%R)q;=Bl:Z]n#?h>%#KutuU~ K7}50Md^*rt&/b8' );
-define( 'AUTH_SALT',        'd9n:uV<^3MaiwMQ:!8FrE,2>>oE!Qj5L?~Dc3a9G+1>dAgJxGr+QpD[+QC=llDV+' );
-define( 'SECURE_AUTH_SALT', '$}dT%?fwHasKG%5<a$yX4l0G6`*/tcLK32bw%#X1`Iz~tV4s|k^1e+9~c#6{ K$P' );
-define( 'LOGGED_IN_SALT',   '#Oi2$9K>z#PYpJ3-VAr#G;|le##0_Wa{1<9fLzRA^u)_$!`&<dn_2lzVf)!?;P=N' );
-define( 'NONCE_SALT',       'a69S<vje2suwa:Ib5%8,hNg~de6d-:ep f4P49uuJ0jCDZ&++d{ x!z&v1[P|bKS' );
+define('AUTH_KEY',         'rK#Qo:z{ML::U-hOai<7+CmCtZS:In/;@jNA;i8b*/5W$_+I+x9%ypBW&u.$>l;&');
+define('SECURE_AUTH_KEY',  '.U,bk#MYJqd7;#1l]l9x++MPet02Gk]jQ-NkCJY-#P%=7*XzPjWzk>it@j=98u@D');
+define('LOGGED_IN_KEY',    '|0sv<&q*lxn[lxc8S{xk{niZ{>z-figgCsS=c{(0fMST}{=S<[|5d{<{Q=jD/aiT');
+define('NONCE_KEY',        'M W.2^]*yq%|g+*#bdRz|T8Z`5Nbq6(7(t-5o}Z`Hu=;8TE!|yXj#hT:/JW9cY(k');
+define('AUTH_SALT',        'ZjU^9|o[ $Exa+-;PE06Msl&!EF&-ZbC){sn! Nf[#Bh5*SnM(HWJ5q=#3u*_8Yt');
+define('SECURE_AUTH_SALT', '~e?=lEv7,Rm1RW}JWjk%@+`o<TaJ,8 ^:|h$EC{DmA~t $84P{_I(_K|99+|3|k6');
+define('LOGGED_IN_SALT',   '6<vo)h._a7NO+0!`$f}Xa[6N=wDIl+D.gK<*Q]T7HHGuX[X(;7CuJFrywD=Qr:DA');
+define('NONCE_SALT',       'w-n+)o-^2B*/R&rm5fNMTGg~uJWl< m$n4N=@1Pj+DZ73<AOu#{e*<S-3_L=>V+A');
 
 /**#@-*/
 
@@ -94,3 +100,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('DISALLOW_FILE_EDIT', true);
