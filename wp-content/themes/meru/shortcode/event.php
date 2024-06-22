@@ -35,11 +35,11 @@ function rk_event( $atts, $content = null ) {
 
             $output .= '<div class="col-md-5">';
 
-            $output .= '<div class="rk-event-thumbnail">';
+            $output .= '<a href="'. esc_url($link) .'" class="rk-event-thumbnail">';
             $output .= $image;
-            $output .= '</div>'; // rk-event-thumbnail
+            $output .= '</a>'; // rk-event-thumbnail
 
-            $output .= '<h2 class="rk-event-title">' . $title . '</h2>';
+            $output .= '<h2 class="rk-event-title"><a href="'. esc_url($link) .'">' . $title . '</a></h2>';
             $output .= '</div>'; // col-md-5
 
             $output .= '<div class="col-md-7">';

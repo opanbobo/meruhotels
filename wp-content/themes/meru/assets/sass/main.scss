@@ -310,9 +310,9 @@ header.wp-block-template-part {
   @media screen and (max-width:768px) {
     font-size: 20px;
   }
-  &:hover{
+  &:hover, &:active, &:focus{
     color: #fff;
-    background-color: #C36110;
+    background-color: #C36110 !important;
     border-color: #C36110;
   }
 }
@@ -1413,6 +1413,12 @@ header.wp-block-template-part {
   color: #fff;
   z-index: 1;
 
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
   @media screen and (max-width:768px) {
     font-size: 20px;
     bottom: 10px;
@@ -1421,6 +1427,7 @@ header.wp-block-template-part {
 
 .rk-event-thumbnail {
   position: relative;
+  display: block;
   height: 100%;
   min-height: 234px;
 
@@ -1469,7 +1476,7 @@ header.wp-block-template-part {
 }
 
 .rk-event-content {
-  padding: 80px 50px;
+  padding: 60px 50px;
 
   @media screen and (max-width:768px) {
     padding: 20px 20px 30px;
@@ -1489,6 +1496,7 @@ header.wp-block-template-part {
   margin-bottom: 40px;
   font-size: 25px;
   color: #898F93;
+  line-height: 1.2;
 
   @media screen and (max-width:768px) {
     font-size: 16px;
@@ -1506,6 +1514,99 @@ header.wp-block-template-part {
       font-size: 20px;
       margin-bottom: 20px;
     }
+  }
+}
+
+.rk-event-detail-description {
+  color: hsla(0, 0%, 30%, 1);
+  font-size: 14px;
+  @media(min-width:768px) {
+    font-size: 28px;
+  }
+}
+
+.rk-event-detail-box-1,
+.rk-event-detail-box-2,
+.rk-event-detail-box-3 {
+  background: #F0EEDC;
+  padding: 30px 40px;
+
+  @media(max-width:767px) {
+    padding: 20px;
+  }
+}
+
+.rk-event-detail-box-1 {
+  margin-top: 50px;
+}
+
+.rk-event-detail-box-2,
+.rk-event-detail-box-3 {
+  margin-top: 40px;
+}
+
+.rk-event-detail-box-3 {
+  padding: 55px 40px 30px;
+
+  @media(max-width:767px) {
+    padding: 20px;
+  }
+}
+
+.rk-event-detail-box-1-heading .wp-block-heading,
+.rk-event-detail-box-2-heading .wp-block-heading,
+.rk-event-detail-box-3-heading .wp-block-heading {
+  font-size: 25px;
+  line-height: 1.88;
+  font-weight: 700;
+  margin-bottom: 0;
+
+  @media(max-width:767px) {
+    font-size: 18px;
+  }
+}
+
+.rk-event-detail-box-3-heading .wp-block-heading {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media(max-width:767px) {
+    margin-bottom: 5px;
+  }
+}
+
+.rk-event-detail-box-1-content,
+.rk-event-detail-box-2-content {
+  font-size: 25px;
+  line-height: 1.5;
+
+  @media(max-width:767px) {
+    font-size: 14px;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding-left: 30px;
+  }
+}
+
+.rk-event-detail-box-3-content {
+  font-size: 20px;
+  line-height: 1.88;
+
+  ul {
+    padding-left: 30px;
+
+    @media(max-width:767px) {
+      padding-left: 15px;
+    }
+  }
+
+  @media(max-width:767px) {
+    font-size: 14px;
   }
 }
 
