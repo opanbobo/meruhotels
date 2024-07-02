@@ -20,9 +20,19 @@
 	],
 	"customTemplates": [
 		{
+			"name": "page-hero",
+			"postTypes": ["page"],
+			"title": "Page Hero"
+		},
+		{
+			"name": "page-no-container-hero",
+			"postTypes": ["page"],
+			"title": "Page No Container Hero"
+		},
+		{
 			"name": "page-no-container",
 			"postTypes": ["page"],
-			"title": "Page No Contaier"
+			"title": "Page No Container"
 		}
 	],
 	"settings": {

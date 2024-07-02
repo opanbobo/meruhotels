@@ -56,6 +56,21 @@ jQuery(document).ready(function($) {
         ]
     });
 
+    $('.home-sliders-2').slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        draggable: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
+    });
+
     $('.center-mode-slider').slick({
         centerMode: true,
         centerPadding: '20px',

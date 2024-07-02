@@ -331,6 +331,13 @@ header.wp-block-template-part {
     font-size: 20px !important;
   }
 }
+.title-overlay-third-section{
+  font-family: 'Voyage';
+  font-size: 45px !important;
+  @media screen and (max-width:768px) {
+    font-size: 25px !important;
+  }
+}
 
 .rk-breadcrumb {
   padding: 25px 15px 15px;
@@ -592,6 +599,53 @@ header.wp-block-template-part {
     }
   }
 
+  .rk-slick-arrow-gold .slick-arrow{
+    background: url(../img/btn-sliders.png) no-repeat;
+    text-indent: -9999px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+    &:hover{
+      opacity: .5;
+    }
+    &.slick-prev{
+      left: -8%;
+    }
+    &.slick-next{
+      background: url(../img/btn-sliders-r.png) no-repeat;
+      right: -8%;
+    }
+  }
+
+  .rk-slick-dots-gold .slick-dots{
+    position: initial;
+    margin-top: 20px;
+    @media screen and (max-width:768px) {
+      margin-top: 0;
+    }
+    li{
+      margin: 0;
+      width: auto;
+      &.slick-active{
+        button{
+          background: #8A471A;
+        }
+      }
+      button{
+        background: #D9D9D9;
+        text-indent: -9999px;
+        padding: 2px 50px;
+        height: auto;
+        @media screen and (max-width:768px) {
+          padding: 2px 30px;
+        }
+      }
+    }
+  }
+
   .home-sliders-1{
     .slick-arrow{
       background: url(../img/btn-sliders.png) no-repeat;
@@ -637,9 +691,13 @@ header.wp-block-template-part {
           color: #0F2335;
           line-height: 42px;
           margin-bottom: 30px;
+          a {
+            color: #0F2335;
+            text-decoration: none;
+          }
           @media screen and (max-width:768px) {
             font-size: 30px;
-            margin-bottom: 0;
+            margin-bottom: 15px;
           }
         }
         p{
@@ -657,11 +715,17 @@ header.wp-block-template-part {
           font-family: 'Minion';
           margin-top: 20px;
           display: inline-block;
+          text-decoration: underline;
           span{
             padding-right: 20px;
             background-size: contain;
             background: url(../img/arrow-list.png) no-repeat right;
-
+          }
+        }
+        .btn-bottom {
+          @media (min-width: 768px) {
+            position: absolute;
+            bottom: 45px;
           }
         }
       }
@@ -855,6 +919,32 @@ header.wp-block-template-part {
       background: #DC7C47;
       border-color: #DC7C47;
     }
+  }
+}
+
+@media(max-width: 767px) {
+  .gems-hero-swimming .wp-block-cover__image-background{
+    object-position: 21%;
+  }
+
+  .gems-hero-beach .wp-block-cover__image-background{
+    object-position: 77%;
+  }
+
+  .gems-hero-fitness .wp-block-cover__image-background{
+    object-position: 63%;
+  }
+
+  .gems-hero-sarinah .wp-block-cover__image-background{
+    object-position: 60%;
+  }
+
+  .event-hero-holiday .wp-block-cover__image-background{
+    object-position: 60%;
+  }
+
+  .gems-img-468 img {
+    height: 251px !important;
   }
 }
 
